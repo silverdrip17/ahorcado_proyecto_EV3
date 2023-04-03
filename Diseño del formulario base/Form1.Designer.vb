@@ -49,9 +49,9 @@ Partial Class Form1
         Me.Button25 = New System.Windows.Forms.Button()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.Button27 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Lblintentos = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -298,13 +298,6 @@ Partial Class Form1
         Me.Button27.Text = "Z"
         Me.Button27.UseVisualStyleBackColor = True
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(1019, 337)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(73, 22)
-        Me.TextBox1.TabIndex = 27
-        '
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(853, 29)
@@ -322,14 +315,22 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Lblintentos
+        '
+        Me.Lblintentos.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Lblintentos.Location = New System.Drawing.Point(1020, 351)
+        Me.Lblintentos.Name = "Lblintentos"
+        Me.Lblintentos.Size = New System.Drawing.Size(107, 83)
+        Me.Lblintentos.TabIndex = 30
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1200, 600)
+        Me.Controls.Add(Me.Lblintentos)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button26)
         Me.Controls.Add(Me.Button25)
@@ -361,7 +362,6 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -392,7 +392,7 @@ Partial Class Form1
     Friend WithEvents Button25 As Button
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Lblintentos As Label
 End Class
