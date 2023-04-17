@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmJuego.Designer.vb">
+      <DependentUpon>FrmJuego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJuego.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmBienvenida.Designer.vb">
       <DependentUpon>FrmBienvenida.vb</DependentUpon>
     </Compile>
@@ -85,6 +91,7 @@
     <Compile Include="FrmDificultad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -103,6 +110,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmJuego.resx">
+      <DependentUpon>FrmJuego.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.vb</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ahorcado2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaDeClases\BibliotecaDeClases.vbproj">
+      <Project>{202357b3-3f65-4066-a4ce-111e87c7f095}</Project>
+      <Name>BibliotecaDeClases</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
