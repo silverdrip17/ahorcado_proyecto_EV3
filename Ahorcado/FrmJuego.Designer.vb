@@ -49,11 +49,13 @@ Partial Class FrmJuego
         Me.Button25 = New System.Windows.Forms.Button()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.Button27 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Lblintentos = New System.Windows.Forms.Label()
+        Me.imgAhorcado = New System.Windows.Forms.PictureBox()
         Me.Btninicio = New System.Windows.Forms.Button()
         Me.GrbPalabras = New System.Windows.Forms.GroupBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LblPalabras = New System.Windows.Forms.Label()
+        Me.LblletrasFalladas = New System.Windows.Forms.Label()
+        CType(Me.imgAhorcado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GrbPalabras.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -326,24 +328,14 @@ Partial Class FrmJuego
         Me.Button27.Text = "Z"
         Me.Button27.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'imgAhorcado
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(803, 62)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(335, 276)
-        Me.PictureBox1.TabIndex = 28
-        Me.PictureBox1.TabStop = False
-        '
-        'Lblintentos
-        '
-        Me.Lblintentos.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Lblintentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblintentos.Location = New System.Drawing.Point(1020, 351)
-        Me.Lblintentos.Name = "Lblintentos"
-        Me.Lblintentos.Size = New System.Drawing.Size(107, 82)
-        Me.Lblintentos.TabIndex = 30
-        Me.Lblintentos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.imgAhorcado.Location = New System.Drawing.Point(859, 85)
+        Me.imgAhorcado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.imgAhorcado.Name = "imgAhorcado"
+        Me.imgAhorcado.Size = New System.Drawing.Size(335, 276)
+        Me.imgAhorcado.TabIndex = 28
+        Me.imgAhorcado.TabStop = False
         '
         'Btninicio
         '
@@ -356,21 +348,40 @@ Partial Class FrmJuego
         '
         'GrbPalabras
         '
+        Me.GrbPalabras.BackColor = System.Drawing.Color.SpringGreen
+        Me.GrbPalabras.Controls.Add(Me.LblPalabras)
         Me.GrbPalabras.Location = New System.Drawing.Point(61, 115)
         Me.GrbPalabras.Name = "GrbPalabras"
         Me.GrbPalabras.Size = New System.Drawing.Size(635, 193)
         Me.GrbPalabras.TabIndex = 32
         Me.GrbPalabras.TabStop = False
         '
+        'LblPalabras
+        '
+        Me.LblPalabras.BackColor = System.Drawing.Color.MediumSpringGreen
+        Me.LblPalabras.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPalabras.Location = New System.Drawing.Point(48, 60)
+        Me.LblPalabras.Name = "LblPalabras"
+        Me.LblPalabras.Size = New System.Drawing.Size(541, 87)
+        Me.LblPalabras.TabIndex = 0
+        Me.LblPalabras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LblletrasFalladas
+        '
+        Me.LblletrasFalladas.Location = New System.Drawing.Point(165, 45)
+        Me.LblletrasFalladas.Name = "LblletrasFalladas"
+        Me.LblletrasFalladas.Size = New System.Drawing.Size(481, 40)
+        Me.LblletrasFalladas.TabIndex = 33
+        '
         'FrmJuego
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1200, 601)
+        Me.Controls.Add(Me.LblletrasFalladas)
         Me.Controls.Add(Me.GrbPalabras)
         Me.Controls.Add(Me.Btninicio)
-        Me.Controls.Add(Me.Lblintentos)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.imgAhorcado)
         Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button26)
         Me.Controls.Add(Me.Button25)
@@ -401,7 +412,8 @@ Partial Class FrmJuego
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmJuego"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgAhorcado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GrbPalabras.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -433,8 +445,9 @@ Partial Class FrmJuego
     Friend WithEvents Button25 As Button
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Lblintentos As Label
+    Friend WithEvents imgAhorcado As PictureBox
     Friend WithEvents Btninicio As Button
     Friend WithEvents GrbPalabras As GroupBox
+    Friend WithEvents LblPalabras As Label
+    Friend WithEvents LblletrasFalladas As Label
 End Class
