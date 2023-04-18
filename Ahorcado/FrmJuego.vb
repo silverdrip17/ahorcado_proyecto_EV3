@@ -6,31 +6,9 @@ Public Class FrmJuego
     Dim fallos As Integer = 0
     'Dim x As Integer = 100
     Dim palabraActual As String
-    Private Sub Button11_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button9.Click, Button8.Click, Button7.Click, Button6.Click, Button5.Click, Button4.Click, Button3.Click, Button27.Click, Button26.Click, Button25.Click, Button24.Click, Button23.Click, Button22.Click, Button21.Click, Button20.Click, Button2.Click, Button19.Click, Button18.Click, Button17.Click, Button16.Click, Button15.Click, Button14.Click, Button13.Click, Button12.Click, Button11.Click, Button10.Click, Button1.Click
-        'Dim boton As Button = TryCast(sender, Button)
-        'If palabraAAdivinar.Palabra.ToLower.Contains(boton.Text.ToLower) Then
-        '    boton.Hide()
-        '    Me.Controls.Add(lblLetra)
-        'End If
-        'If checkWord(boton.Text) Then
-        '    boton.Hide()
-        'Else
-        '    boton.Hide()
-        '    'x += 100
-        '    'lblLetra.Location = New Point(x, 100)
-        '    'Me.Controls.Add(lblLetra)
-        'End If
-
-    End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         palabraActual = setWord()
-
-
     End Sub
 
 
@@ -39,7 +17,7 @@ Public Class FrmJuego
         Me.Hide()
     End Sub
     Private Function setWord() As String
-        Dim aWords As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
+        Dim aWords As String() = New String() {"a"} '{"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
         LblPalabras.Text = ""
         Dim random As Random = New Random()
         Dim value As Integer = random.[Next](aWords.Length)
@@ -89,10 +67,12 @@ Public Class FrmJuego
 
             If checkWord(letter) Then
                 LblletrasFalladas.Text = "La letra " & letter & " es parte de la palabra"
-                LblletrasFalladas.BackColor = Color.Blue
+                LblletrasFalladas.BackColor = Color.Green
+                boton.Enabled = False
             Else
                 LblletrasFalladas.Text = "Buen intento, pero no!"
-                LblletrasFalladas.BackColor = Color.CadetBlue
+                LblletrasFalladas.BackColor = Color.Red
+                boton.Hide()
                 fallos += 1
 
                 Select Case fallos
@@ -100,7 +80,7 @@ Public Class FrmJuego
                         LblletrasFalladas.Visible = True
                         LblletrasFalladas.Text = "Intentos: "
                         imgAhorcado.Visible = True
-                        LblletrasFalladas.ForeColor = Color.OrangeRed
+                        LblletrasFalladas.ForeColor = Color.Black
                         'showWrongLetter()
                     Case 2
                         'Dim imagePath As String = Path.Combine(Application.StartupPath, "../../../img/2.png")

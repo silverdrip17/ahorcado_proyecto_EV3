@@ -330,7 +330,7 @@ Partial Class FrmJuego
         '
         'imgAhorcado
         '
-        Me.imgAhorcado.Location = New System.Drawing.Point(859, 85)
+        Me.imgAhorcado.Location = New System.Drawing.Point(749, 45)
         Me.imgAhorcado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.imgAhorcado.Name = "imgAhorcado"
         Me.imgAhorcado.Size = New System.Drawing.Size(335, 276)
