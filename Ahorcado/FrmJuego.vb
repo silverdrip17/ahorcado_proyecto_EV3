@@ -17,7 +17,7 @@ Public Class FrmJuego
         Me.Hide()
     End Sub
     Private Function setWord() As String
-        Dim aWords As String() = New String() {"a"} '{"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
+        Dim aWords As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
         LblPalabras.Text = ""
         Dim random As Random = New Random()
         Dim value As Integer = random.[Next](aWords.Length)
