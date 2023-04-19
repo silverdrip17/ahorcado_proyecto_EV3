@@ -113,7 +113,7 @@ Public Class FrmJuego
                         'txtLetra.Visible = False
                         'btnJugar.Visible = False
                         MessageBox.Show("Has perdido...")
-
+                        Me.Close()
                 End Select
             End If
         End If
