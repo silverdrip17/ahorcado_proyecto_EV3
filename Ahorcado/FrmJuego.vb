@@ -13,11 +13,8 @@ Public Class FrmJuego
 
 
     Private Sub Btninicio_Click(sender As Object, e As EventArgs) Handles Btninicio.Click
-        'FrmBienvenida.Show()
-        'Me.Hide()
-
-        Me.Close()
         FrmBienvenida.Show()
+        Me.Close()
     End Sub
     Private Function SetWord() As String
         Dim aPalabras As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
