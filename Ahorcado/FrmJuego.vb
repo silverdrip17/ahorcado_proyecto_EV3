@@ -70,7 +70,7 @@ Public Class FrmJuego
                 LblletrasFalladas.BackColor = Color.Green
                 boton.Enabled = False
             Else
-                LblletrasFalladas.Text = "Buen intento, pero no!"
+                LblletrasFalladas.Text = $"Buen intento, pero no , te quedan {6 - fallos} intentos!"
                 LblletrasFalladas.BackColor = Color.Red
                 boton.Hide()
                 fallos += 1
@@ -78,7 +78,7 @@ Public Class FrmJuego
                 Select Case fallos
                     Case 1
                         LblletrasFalladas.Visible = True
-                        LblletrasFalladas.Text = "Intentos: "
+                        'LblletrasFalladas.Text = "Intentos: "
                         imgAhorcado.Visible = True
                         LblletrasFalladas.ForeColor = Color.Black
                         'showWrongLetter()
@@ -106,6 +106,8 @@ Public Class FrmJuego
                         'lblNotificacion.BackColor = Color.Red
                         'txtLetra.Visible = False
                         'btnJugar.Visible = False
+                    Case Else
+                        MessageBox.Show("holaaaaaaa")
                 End Select
             End If
         End If
