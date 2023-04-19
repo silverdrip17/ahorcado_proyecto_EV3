@@ -16,12 +16,12 @@ Public Class FrmJuego
         FrmBienvenida.Show()
         Me.Hide()
     End Sub
-    Private Function setWord() As String
-        Dim aWords As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
+    Private Function SetWord() As String
+        Dim aPalabras As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
         LblPalabras.Text = ""
         Dim random As Random = New Random()
-        Dim value As Integer = random.[Next](aWords.Length)
-        Dim aLength As Integer = aWords(value).Length
+        Dim value As Integer = random.Next(aPalabras.Length)
+        Dim aLength As Integer = aPalabras(value).Length
         aToComplete = New Char(aLength - 1) {}
 
         For i As Integer = 0 To aLength - 1
@@ -29,9 +29,9 @@ Public Class FrmJuego
             aToComplete(i) = "_"c
         Next
 
-        Return aWords(value)
+        Return aPalabras(value)
     End Function
-    Private Function checkWord(ByVal letter As Char) As Boolean
+    Private Function CheckWord(letter As Char) As Boolean
         Dim result As Boolean = False
         aLetters = palabraActual.ToCharArray()
         Dim cont As Integer = 0
@@ -77,28 +77,34 @@ Public Class FrmJuego
 
                 Select Case fallos
                     Case 1
+                        imgAhorcado.Image = My.Resources.el_ahorcado1
                         LblletrasFalladas.Visible = True
                         'LblletrasFalladas.Text = "Intentos: "
                         imgAhorcado.Visible = True
                         LblletrasFalladas.ForeColor = Color.Black
                         'showWrongLetter()
                     Case 2
-                        'Dim imagePath As String = Path.Combine(Application.StartupPath, "../../../img/2.png")
+                        imgAhorcado.Image = My.Resources.el_ahorcado2
+                        'Dim imagePath As String = Path.Combine(Application.StartupPath, "./imagenesAhorcado/el-ahorcado1")
                         'imgAhorcado.Image = Image.FromFile(imagePath)
                         'showWrongLetter()
                     Case 3
+                        imgAhorcado.Image = My.Resources.el_ahorcado3
                         'imagePath = Path.Combine(Application.StartupPath, "../../../img/3.png")
                         'imgAhorcado.Image = Image.FromFile(imagePath)
                         'showWrongLetter()
                     Case 4
+                        imgAhorcado.Image = My.Resources.el_ahorcado4
                         'imagePath = Path.Combine(Application.StartupPath, "../../../img/4.png")
                         'imgAhorcado.Image = Image.FromFile(imagePath)
                         'showWrongLetter()
                     Case 5
+                        imgAhorcado.Image = My.Resources.el_ahorcado5
                         'imagePath = Path.Combine(Application.StartupPath, "../../../img/5.png")
                         'imgAhorcado.Image = Image.FromFile(imagePath)
                         'showWrongLetter()
                     Case 6
+                        imgAhorcado.Image = My.Resources.el_ahorcado6
                         'imagePath = Path.Combine(Application.StartupPath, "../../../img/6.png")
                         'imgAhorcado.Image = Image.FromFile(imagePath)
                         'showWrongLetter()

@@ -69,5 +69,65 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado5() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado5", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property el_ahorcado6() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("el-ahorcado6", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
