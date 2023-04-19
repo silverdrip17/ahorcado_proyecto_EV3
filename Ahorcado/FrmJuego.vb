@@ -78,7 +78,7 @@ Public Class FrmJuego
                 Select Case fallos
                     Case 1
                         LblletrasFalladas.Visible = True
-                        LblletrasFalladas.Text = "Intentos: "
+                        'LblletrasFalladas.Text = "Intentos: "
                         imgAhorcado.Visible = True
                         LblletrasFalladas.ForeColor = Color.Black
                         'showWrongLetter()
