@@ -54,8 +54,10 @@ Public Class FrmJuego
 
             cont += 1
         Next
-
         LblPalabras.Text = word
+        If word.Equals(palabraActual) Then
+            MessageBox.Show("Ganaste")
+        End If
         Return result
     End Function
 
