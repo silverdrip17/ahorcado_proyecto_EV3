@@ -79,41 +79,25 @@ Public Class FrmJuego
                     Case 1
                         imgAhorcado.Image = My.Resources.el_ahorcado1
                         LblletrasFalladas.Visible = True
-                        'LblletrasFalladas.Text = "Intentos: "
                         imgAhorcado.Visible = True
                         LblletrasFalladas.ForeColor = Color.Black
-                        'showWrongLetter()
+
                     Case 2
                         imgAhorcado.Image = My.Resources.el_ahorcado2
-                        'Dim imagePath As String = Path.Combine(Application.StartupPath, "./imagenesAhorcado/el-ahorcado1")
-                        'imgAhorcado.Image = Image.FromFile(imagePath)
-                        'showWrongLetter()
+
                     Case 3
                         imgAhorcado.Image = My.Resources.el_ahorcado3
-                        'imagePath = Path.Combine(Application.StartupPath, "../../../img/3.png")
-                        'imgAhorcado.Image = Image.FromFile(imagePath)
-                        'showWrongLetter()
+
                     Case 4
                         imgAhorcado.Image = My.Resources.el_ahorcado4
-                        'imagePath = Path.Combine(Application.StartupPath, "../../../img/4.png")
-                        'imgAhorcado.Image = Image.FromFile(imagePath)
-                        'showWrongLetter()
+
                     Case 5
                         imgAhorcado.Image = My.Resources.el_ahorcado5
-                        'imagePath = Path.Combine(Application.StartupPath, "../../../img/5.png")
-                        'imgAhorcado.Image = Image.FromFile(imagePath)
-                        'showWrongLetter()
+
                     Case 6
                         imgAhorcado.Image = My.Resources.el_ahorcado6
-                        'imagePath = Path.Combine(Application.StartupPath, "../../../img/6.png")
-                        'imgAhorcado.Image = Image.FromFile(imagePath)
-                        'showWrongLetter()
-                        'lblNotificacion.Text = "GAME OVER :/"
-                        'lblNotificacion.BackColor = Color.Red
-                        'txtLetra.Visible = False
-                        'btnJugar.Visible = False
+
                         MessageBox.Show("Has perdido...")
-                        Me.Close()
                 End Select
             End If
         End If
