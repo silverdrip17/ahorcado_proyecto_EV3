@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class GameOver
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Victoria
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,41 +20,41 @@ Partial Class GameOver
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GameOver))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Victoria))
         Me.Btnexit = New System.Windows.Forms.Button()
         Me.Btnreset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btnexit
         '
-        Me.Btnexit.Location = New System.Drawing.Point(378, 328)
+        Me.Btnexit.Location = New System.Drawing.Point(298, 356)
         Me.Btnexit.Name = "Btnexit"
-        Me.Btnexit.Size = New System.Drawing.Size(160, 75)
+        Me.Btnexit.Size = New System.Drawing.Size(153, 78)
         Me.Btnexit.TabIndex = 0
         Me.Btnexit.Text = "EXIT"
         Me.Btnexit.UseVisualStyleBackColor = True
         '
         'Btnreset
         '
-        Me.Btnreset.Location = New System.Drawing.Point(86, 328)
+        Me.Btnreset.Location = New System.Drawing.Point(61, 356)
         Me.Btnreset.Name = "Btnreset"
-        Me.Btnreset.Size = New System.Drawing.Size(160, 75)
+        Me.Btnreset.Size = New System.Drawing.Size(153, 78)
         Me.Btnreset.TabIndex = 1
-        Me.Btnreset.Text = "Jugar de nuevo"
+        Me.Btnreset.Text = "Volver a jugar"
         Me.Btnreset.UseVisualStyleBackColor = True
         '
-        'GameOver
+        'Victoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(614, 453)
+        Me.ClientSize = New System.Drawing.Size(502, 493)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
-        Me.Name = "GameOver"
-        Me.Text = "GameOver"
+        Me.Name = "Victoria"
+        Me.Text = "Victoria"
         Me.ResumeLayout(False)
 
     End Sub
