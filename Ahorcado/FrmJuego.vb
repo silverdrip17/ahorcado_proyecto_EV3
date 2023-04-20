@@ -17,7 +17,12 @@ Public Class FrmJuego
         Me.Close()
     End Sub
     Private Function SetWord() As String
-        Dim aPalabras As String() = New String(4) {"elocuente", "rojo", "silbar", "tecnologia", "asincrono"}
+        Dim fileReader As String
+        fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
+        MsgBox(fileReader)
+
+        Dim aPalabras As String() = {}
+        aPalabras = fileReader.Split(Chr(32))
         LblPalabras.Text = ""
         Dim random As Random = New Random()
         Dim value As Integer = random.Next(aPalabras.Length)
