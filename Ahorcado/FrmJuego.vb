@@ -11,19 +11,16 @@ Public Class FrmJuego
         palabraActual = SetWord()
     End Sub
     Public Function SetWord() As String
-        Dim aPalabras As String() = listaDePalabras.getArrayPalabras()
-        LblPalabras.Text = ""
-        Dim random As Random = New Random()
-        Dim value As Integer = random.Next(aPalabras.Length)
-        Dim aLength As Integer = aPalabras(value).Length
-        sustitucionCaracteres = New Char(aLength - 1) {}
 
+        Dim aLength As Integer = listaPalabras.palabraAAdivinar.Length
+        sustitucionCaracteres = New Char(aLength - 1) {}
+        LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
             LblPalabras.Text += " _ "
             sustitucionCaracteres(i) = "_"c
         Next
 
-        Return aPalabras(value)
+        Return listaPalabras.palabraAAdivinar
     End Function
 
     Public Function CheckWord(letter As Char) As Boolean

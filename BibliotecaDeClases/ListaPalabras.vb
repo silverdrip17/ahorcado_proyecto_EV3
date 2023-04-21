@@ -1,14 +1,28 @@
 ﻿Public Class ListaPalabras
 
-    Private fileReader As String
-    Private Property APalabras As String() = {}
+
+    Private aPalabras As String() = {}
+
+
 
     Public Sub New()
-        Me.fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
-        Me.APalabras = fileReader.Split(" ")
+        Dim fileReader As String
+        ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
+        fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
+        Me.aPalabras = fileReader.Split(" ")
     End Sub
-    Public Function getArrayPalabras() As String()
-        Return aPalabras
+    Private ReadOnly Property Palabras() As String()
+        Get
+            Return aPalabras
+        End Get
+    End Property
+
+    Public Function palabraAAdivinar() As String
+        Dim listaPalabras As String() = Palabras()
+        Dim random As Random = New Random()
+        Dim value As Integer = random.Next(listaPalabras.Length)
+        Dim longitudPalabra As String = listaPalabras(value)
+        Return longitudPalabra
     End Function
 
 
