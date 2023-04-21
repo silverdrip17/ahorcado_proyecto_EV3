@@ -5,7 +5,7 @@
 
     Public Sub New()
         Me.fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
-        Me.APalabras = fileReader.Split(Chr(32))
+        Me.APalabras = fileReader.Split(" ")
     End Sub
     Public Function getArrayPalabras() As String()
         Return aPalabras
