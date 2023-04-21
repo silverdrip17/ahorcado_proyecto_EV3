@@ -330,7 +330,8 @@ Partial Class FrmJuego
         '
         'imgAhorcado
         '
-        Me.imgAhorcado.Location = New System.Drawing.Point(859, 85)
+        Me.imgAhorcado.InitialImage = Global.Ahorcado.My.Resources.Resources.ahorcado2
+        Me.imgAhorcado.Location = New System.Drawing.Point(749, 45)
         Me.imgAhorcado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.imgAhorcado.Name = "imgAhorcado"
         Me.imgAhorcado.Size = New System.Drawing.Size(335, 276)
@@ -368,10 +369,12 @@ Partial Class FrmJuego
         '
         'LblletrasFalladas
         '
+        Me.LblletrasFalladas.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblletrasFalladas.Location = New System.Drawing.Point(165, 45)
         Me.LblletrasFalladas.Name = "LblletrasFalladas"
         Me.LblletrasFalladas.Size = New System.Drawing.Size(481, 40)
         Me.LblletrasFalladas.TabIndex = 33
+        Me.LblletrasFalladas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmJuego
         '

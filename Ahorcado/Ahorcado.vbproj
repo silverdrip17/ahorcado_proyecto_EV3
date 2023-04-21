@@ -91,6 +91,12 @@
     <Compile Include="FrmDificultad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmgameOver.Designer.vb">
+      <DependentUpon>FrmgameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmgameOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -108,6 +114,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="FrmVictoria.Designer.vb">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVictoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmJuego.resx">
@@ -119,11 +131,17 @@
     <EmbeddedResource Include="FrmDificultad.resx">
       <DependentUpon>FrmDificultad.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmgameOver.resx">
+      <DependentUpon>FrmgameOver.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVictoria.resx">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +164,24 @@
       <Project>{202357b3-3f65-4066-a4ce-111e87c7f095}</Project>
       <Name>BibliotecaDeClases</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\el-ahorcado6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,5 +1,5 @@
 ﻿Imports BibliotecaDeClases
 
 Module Module1
-    Public palabraAAdivinar As New Palabra
+    Public listaPalabras As New ListaPalabras
 End Module
