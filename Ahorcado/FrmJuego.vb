@@ -2,26 +2,25 @@
 
 Public Class FrmJuego
     Dim fallos As Integer = 0
-    Public Property aToComplete As Char()
+    Public Property sustitucionCaracteres As Char()
     Public Property aLetters As Char()
     Public Property palabraActual As String
     Public listaDePalabras As New ListaPalabras
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         palabraActual = SetWord()
-
     End Sub
     Public Function SetWord() As String
-        Dim aPalabras As String() = listaDePalabras.getArrayPalabras
+        Dim aPalabras As String() = listaDePalabras.getArrayPalabras()
         LblPalabras.Text = ""
         Dim random As Random = New Random()
         Dim value As Integer = random.Next(aPalabras.Length)
         Dim aLength As Integer = aPalabras(value).Length
-        aToComplete = New Char(aLength - 1) {}
+        sustitucionCaracteres = New Char(aLength - 1) {}
 
         For i As Integer = 0 To aLength - 1
             LblPalabras.Text += " _ "
-            aToComplete(i) = "_"c
+            sustitucionCaracteres(i) = "_"c
         Next
 
         Return aPalabras(value)
@@ -36,15 +35,15 @@ Public Class FrmJuego
         For Each character As Char In aLetters
 
             If character = letter Then
-                aToComplete(cont) = letter
+                sustitucionCaracteres(cont) = letter
                 result = True
-                word += aToComplete(cont).ToString()
+                word += sustitucionCaracteres(cont).ToString()
             Else
 
-                If aToComplete(cont) = "_"c Then
+                If sustitucionCaracteres(cont) = "_"c Then
                     word += " _ "
                 Else
-                    word += aToComplete(cont).ToString()
+                    word += sustitucionCaracteres(cont).ToString()
                 End If
             End If
 

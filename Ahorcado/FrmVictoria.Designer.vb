@@ -29,7 +29,7 @@ Partial Class FrmVictoria
         '
         'Btnexit
         '
-        Me.Btnexit.Location = New System.Drawing.Point(298, 356)
+        Me.Btnexit.Location = New System.Drawing.Point(353, 438)
         Me.Btnexit.Name = "Btnexit"
         Me.Btnexit.Size = New System.Drawing.Size(153, 78)
         Me.Btnexit.TabIndex = 0
@@ -38,22 +38,22 @@ Partial Class FrmVictoria
         '
         'Btnreset
         '
-        Me.Btnreset.Location = New System.Drawing.Point(61, 356)
+        Me.Btnreset.Location = New System.Drawing.Point(116, 438)
         Me.Btnreset.Name = "Btnreset"
         Me.Btnreset.Size = New System.Drawing.Size(153, 78)
         Me.Btnreset.TabIndex = 1
         Me.Btnreset.Text = "Jugar de nuevo"
         Me.Btnreset.UseVisualStyleBackColor = True
         '
-        'Victoria
+        'FrmVictoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(502, 493)
+        Me.ClientSize = New System.Drawing.Size(731, 631)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
-        Me.Name = "Victoria"
+        Me.Name = "FrmVictoria"
         Me.Text = "Victoria"
         Me.ResumeLayout(False)
 
