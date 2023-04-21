@@ -91,10 +91,10 @@
     <Compile Include="FrmDificultad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameOver.Designer.vb">
-      <DependentUpon>GameOver.vb</DependentUpon>
+    <Compile Include="FrmgameOver.Designer.vb">
+      <DependentUpon>FrmgameOver.vb</DependentUpon>
     </Compile>
-    <Compile Include="GameOver.vb">
+    <Compile Include="FrmgameOver.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -114,10 +114,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Victoria.Designer.vb">
-      <DependentUpon>Victoria.vb</DependentUpon>
+    <Compile Include="FrmVictoria.Designer.vb">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
     </Compile>
-    <Compile Include="Victoria.vb">
+    <Compile Include="FrmVictoria.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -131,8 +131,8 @@
     <EmbeddedResource Include="FrmDificultad.resx">
       <DependentUpon>FrmDificultad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameOver.resx">
-      <DependentUpon>GameOver.vb</DependentUpon>
+    <EmbeddedResource Include="FrmgameOver.resx">
+      <DependentUpon>FrmgameOver.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -140,8 +140,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Victoria.resx">
-      <DependentUpon>Victoria.vb</DependentUpon>
+    <EmbeddedResource Include="FrmVictoria.resx">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

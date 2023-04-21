@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class GameOver
+Partial Class FrmgameOver
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,14 +22,14 @@ Partial Class GameOver
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GameOver))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmgameOver))
         Me.Btnexit = New System.Windows.Forms.Button()
         Me.Btnreset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btnexit
         '
-        Me.Btnexit.Location = New System.Drawing.Point(378, 328)
+        Me.Btnexit.Location = New System.Drawing.Point(469, 335)
         Me.Btnexit.Name = "Btnexit"
         Me.Btnexit.Size = New System.Drawing.Size(160, 75)
         Me.Btnexit.TabIndex = 0
@@ -38,22 +38,22 @@ Partial Class GameOver
         '
         'Btnreset
         '
-        Me.Btnreset.Location = New System.Drawing.Point(86, 328)
+        Me.Btnreset.Location = New System.Drawing.Point(177, 335)
         Me.Btnreset.Name = "Btnreset"
         Me.Btnreset.Size = New System.Drawing.Size(160, 75)
         Me.Btnreset.TabIndex = 1
         Me.Btnreset.Text = "Jugar de nuevo"
         Me.Btnreset.UseVisualStyleBackColor = True
         '
-        'GameOver
+        'FrmgameOver
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(614, 453)
+        Me.ClientSize = New System.Drawing.Size(702, 453)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
-        Me.Name = "GameOver"
+        Me.Name = "FrmgameOver"
         Me.Text = "GameOver"
         Me.ResumeLayout(False)
 

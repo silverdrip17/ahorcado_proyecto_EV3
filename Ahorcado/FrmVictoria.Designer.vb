@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Victoria
+Partial Class FrmVictoria
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Victoria
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Victoria))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmVictoria))
         Me.Btnexit = New System.Windows.Forms.Button()
         Me.Btnreset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -42,7 +42,7 @@ Partial Class Victoria
         Me.Btnreset.Name = "Btnreset"
         Me.Btnreset.Size = New System.Drawing.Size(153, 78)
         Me.Btnreset.TabIndex = 1
-        Me.Btnreset.Text = "Volver a jugar"
+        Me.Btnreset.Text = "Jugar de nuevo"
         Me.Btnreset.UseVisualStyleBackColor = True
         '
         'Victoria
