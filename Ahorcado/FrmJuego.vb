@@ -52,7 +52,8 @@ Public Class FrmJuego
         Next
         LblPalabras.Text = word
         If word.Equals(palabraActual) Then
-            'MessageBox.Show("Ganaste")
+            FrmVictoria.Show()
+            Me.Close()
         End If
         Return result
     End Function
