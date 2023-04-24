@@ -10,7 +10,8 @@ Public Class FrmJuego
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         palabraActual = SetWord()
-
+        lblTimer.Text = 60
+        tmrTiempo.Enabled = True
     End Sub
     Public Function SetWord() As String
         Dim palabraTmp As String = listaPalabras.PalabraAAdivinar
@@ -115,5 +116,12 @@ Public Class FrmJuego
 
     Private Sub LblletrasFalladas_Click(sender As Object, e As EventArgs) Handles LblletrasFalladas.Click
 
+    End Sub
+
+    Private Sub tmrTiempo_Tick(sender As Object, e As EventArgs) Handles tmrTiempo.Tick
+        lblTimer.Text = Val(lblTimer.Text) - 1
+        If lblTimer.Text = 0 Then
+            tmrTiempo.Enabled = False
+        End If
     End Sub
 End Class
