@@ -8,7 +8,7 @@ Public Class FrmJuego
     Public listaDePalabras As New ListaPalabras
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If listaPalabras.hayArchivo Then
+        If listaPalabras.HayArchivo Then
             palabraActual = SetWord()
         Else
             Dim resp = MessageBox.Show("No se encuentra el archivo con las palabras, puedes jugar una version simple del juego", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)

@@ -3,7 +3,7 @@
 
     Private aPalabras As String() = {}
     Private posicionTmp As Integer = -1
-    Public hayArchivo As Boolean = True
+    Public Property HayArchivo As Boolean = True
 
 
     Public Sub New()
@@ -13,7 +13,7 @@
             fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
             Me.aPalabras = fileReader.Split(" ")
         Else
-            hayArchivo = False
+            HayArchivo = False
             aPalabras = {"abecedario", "insti", "cinco", "año"}
         End If
 
