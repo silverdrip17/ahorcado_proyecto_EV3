@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmInstrucciones.Designer.vb">
+      <DependentUpon>FrmInstrucciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInstrucciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmJuego.Designer.vb">
       <DependentUpon>FrmJuego.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmInstrucciones.resx">
+      <DependentUpon>FrmInstrucciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJuego.resx">
       <DependentUpon>FrmJuego.vb</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenesAhorcado\el-ahorcado6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizarra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\felizA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tristeA.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

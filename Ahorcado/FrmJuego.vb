@@ -58,8 +58,13 @@ Public Class FrmJuego
     End Function
 
     Private Sub Btninicio_Click(sender As Object, e As EventArgs) Handles Btninicio.Click
-        FrmBienvenida.Show()
-        Me.Close()
+        Dim result As Integer = MessageBox.Show("¿Seguro quieres abandonar la partida?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        If result = DialogResult.Yes Then
+            FrmBienvenida.Show()
+            Me.Hide()
+        ElseIf result = DialogResult.No Then
+            Exit Sub
+        End If
     End Sub
 
 
@@ -107,5 +112,9 @@ Public Class FrmJuego
                 End Select
             End If
         End If
+    End Sub
+
+    Private Sub LblletrasFalladas_Click(sender As Object, e As EventArgs) Handles LblletrasFalladas.Click
+
     End Sub
 End Class

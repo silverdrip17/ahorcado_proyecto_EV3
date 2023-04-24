@@ -70,10 +70,12 @@ Partial Class FrmBienvenida
         Me.BackgroundImage = Global.Ahorcado.My.Resources.Resources.ahorcado2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(822, 493)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnInstrucciones)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnJugar)
         Me.Name = "FrmBienvenida"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ahorcado"
         Me.ResumeLayout(False)
 

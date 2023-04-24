@@ -118,25 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ahorcado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ahorcado2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="el-ahorcado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenesAhorcado\el-ahorcado1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="el-ahorcado5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenesAhorcado\el-ahorcado5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="el-ahorcado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenesAhorcado\el-ahorcado2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="felizA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\felizA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="el-ahorcado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenesAhorcado\el-ahorcado3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="el-ahorcado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenesAhorcado\el-ahorcado1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ahorcado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahorcado2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="el-ahorcado4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenesAhorcado\el-ahorcado4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="el-ahorcado5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenesAhorcado\el-ahorcado5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pizarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="el-ahorcado6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenesAhorcado\el-ahorcado6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tristeA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tristeA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
