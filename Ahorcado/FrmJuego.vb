@@ -11,8 +11,8 @@ Public Class FrmJuego
         palabraActual = SetWord()
     End Sub
     Public Function SetWord() As String
-
-        Dim aLength As Integer = listaPalabras.palabraAAdivinar.Length
+        Dim palabraTmp As String = listaPalabras.PalabraAAdivinar
+        Dim aLength As Integer = palabraTmp.Length
         sustitucionCaracteres = New Char(aLength - 1) {}
         LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
@@ -20,7 +20,7 @@ Public Class FrmJuego
             sustitucionCaracteres(i) = "_"c
         Next
 
-        Return listaPalabras.palabraAAdivinar
+        Return palabraTmp
     End Function
 
     Public Function CheckWord(letter As Char) As Boolean

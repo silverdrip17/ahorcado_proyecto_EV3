@@ -17,27 +17,29 @@
         End Get
     End Property
 
-    Public Function palabraAAdivinar() As String
+    Public Function PalabraAAdivinar() As String
         Dim listaPalabras As String() = Palabras()
         Dim random As Random = New Random()
         Dim value As Integer
-        Dim longitudPalabra As String
+        Dim palabraAleatoria As String
         If posicionTmp = -1 Then
             value = random.Next(listaPalabras.Length)
-            longitudPalabra = listaPalabras(value)
+            palabraAleatoria = listaPalabras(value)
             posicionTmp = value
         Else
             Do
                 value = random.Next(listaPalabras.Length)
-                longitudPalabra = listaPalabras(value)
+                palabraAleatoria = listaPalabras(value)
+
                 If posicionTmp <> value Then
-                    Return longitudPalabra
+                    posicionTmp = value
+                    Return palabraAleatoria
                 End If
-                posicionTmp = value
+
             Loop
         End If
 
-        Return longitudPalabra
+        Return palabraAleatoria
     End Function
 
 
