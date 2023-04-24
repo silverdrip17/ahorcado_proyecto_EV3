@@ -69,7 +69,7 @@ Public Class FrmJuego
         Dim result As Integer = MessageBox.Show("¿Seguro quieres abandonar la partida?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
         If result = DialogResult.Yes Then
             FrmBienvenida.Show()
-            Me.Hide()
+            Me.Close()
         ElseIf result = DialogResult.No Then
             Exit Sub
         End If
