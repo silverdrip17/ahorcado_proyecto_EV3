@@ -3,13 +3,20 @@
 
     Private aPalabras As String() = {}
     Private posicionTmp As Integer = -1
+    Public hayArchivo As Boolean = True
 
 
     Public Sub New()
         Dim fileReader As String
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
-        fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
-        Me.aPalabras = fileReader.Split(" ")
+        If System.IO.File.Exists("../../Soluciones/soluciones.txt") Then
+            fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
+            Me.aPalabras = fileReader.Split(" ")
+        Else
+            hayArchivo = False
+            aPalabras = {"abecedario", "insti", "cinco", "año"}
+        End If
+
     End Sub
     Private ReadOnly Property Palabras() As String()
         Get
