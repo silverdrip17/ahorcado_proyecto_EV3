@@ -3,7 +3,7 @@
 
     Private aPalabras As String() = {}
     Private posicionTmp As Integer = -1
-    Public Property HayArchivo As Boolean = True
+
 
 
     Public Sub New()
@@ -13,8 +13,9 @@
             fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
             Me.aPalabras = fileReader.Split(" ")
         Else
-            HayArchivo = False
             aPalabras = {"abecedario", "insti", "cinco", "año"}
+            System.IO.File.WriteAllLines("../../Soluciones/", aPalabras)
+
         End If
 
     End Sub
