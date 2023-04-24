@@ -8,7 +8,7 @@
         Me.APalabras = fileReader.Split(" ")
     End Sub
     Public Function getArrayPalabras() As String()
-        Return aPalabras
+        Return APalabras
     End Function
 
 
