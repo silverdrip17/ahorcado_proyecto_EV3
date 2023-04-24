@@ -8,22 +8,30 @@ Public Class FrmJuego
     Public listaDePalabras As New ListaPalabras
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        palabraActual = SetWord()
+        If listaPalabras.hayArchivo Then
+            palabraActual = SetWord()
+        Else
+            Dim resp = MessageBox.Show("No se encuentra el archivo con las palabras, puedes jugar una version simple del juego", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            If resp = Windows.Forms.DialogResult.Yes Then
+                palabraActual = SetWord()
+            Else
+                Me.Close()
+            End If
+
+        End If
+
     End Sub
     Public Function SetWord() As String
-        Dim aPalabras As String() = listaDePalabras.getArrayPalabras()
-        LblPalabras.Text = ""
-        Dim random As Random = New Random()
-        Dim value As Integer = random.Next(aPalabras.Length)
-        Dim aLength As Integer = aPalabras(value).Length
+        Dim palabraTmp As String = listaPalabras.PalabraAAdivinar
+        Dim aLength As Integer = palabraTmp.Length
         sustitucionCaracteres = New Char(aLength - 1) {}
-
+        LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
             LblPalabras.Text += " _ "
             sustitucionCaracteres(i) = "_"c
         Next
 
-        Return aPalabras(value)
+        Return palabraTmp
     End Function
 
     Public Function CheckWord(letter As Char) As Boolean
