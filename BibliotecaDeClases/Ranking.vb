@@ -1,3 +1,3 @@
-﻿Public Class Palabra
-
+﻿Public Class Ranking
+    Public Property TiempoRespuesta As Integer
 End Class
