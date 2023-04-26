@@ -66,7 +66,7 @@ Partial Class FrmJuego
         Me.Button1.BackColor = System.Drawing.Color.LawnGreen
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(120, 315)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(43, 37)
         Me.Button1.TabIndex = 0
@@ -78,7 +78,7 @@ Partial Class FrmJuego
         Me.Button2.BackColor = System.Drawing.Color.LawnGreen
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(237, 379)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(43, 37)
         Me.Button2.TabIndex = 1
@@ -90,7 +90,7 @@ Partial Class FrmJuego
         Me.Button3.BackColor = System.Drawing.Color.LawnGreen
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(161, 379)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(43, 37)
         Me.Button3.TabIndex = 2
@@ -102,7 +102,7 @@ Partial Class FrmJuego
         Me.Button4.BackColor = System.Drawing.Color.LawnGreen
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(85, 379)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(43, 37)
         Me.Button4.TabIndex = 3
@@ -114,7 +114,7 @@ Partial Class FrmJuego
         Me.Button5.BackColor = System.Drawing.Color.LawnGreen
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(320, 379)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(43, 37)
         Me.Button5.TabIndex = 4
@@ -126,7 +126,7 @@ Partial Class FrmJuego
         Me.Button6.BackColor = System.Drawing.Color.LawnGreen
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(392, 379)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(43, 37)
         Me.Button6.TabIndex = 5
@@ -138,7 +138,7 @@ Partial Class FrmJuego
         Me.Button7.BackColor = System.Drawing.Color.LawnGreen
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(458, 379)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(43, 37)
         Me.Button7.TabIndex = 6
@@ -150,7 +150,7 @@ Partial Class FrmJuego
         Me.Button8.BackColor = System.Drawing.Color.LawnGreen
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(533, 379)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(43, 37)
         Me.Button8.TabIndex = 7
@@ -162,7 +162,7 @@ Partial Class FrmJuego
         Me.Button9.BackColor = System.Drawing.Color.LawnGreen
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(558, 315)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(43, 37)
         Me.Button9.TabIndex = 8
@@ -174,7 +174,7 @@ Partial Class FrmJuego
         Me.Button10.BackColor = System.Drawing.Color.LawnGreen
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(491, 315)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(43, 37)
         Me.Button10.TabIndex = 9
@@ -186,7 +186,7 @@ Partial Class FrmJuego
         Me.Button11.BackColor = System.Drawing.Color.LawnGreen
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(425, 315)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(43, 37)
         Me.Button11.TabIndex = 10
@@ -198,7 +198,7 @@ Partial Class FrmJuego
         Me.Button12.BackColor = System.Drawing.Color.LawnGreen
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(350, 315)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(43, 37)
         Me.Button12.TabIndex = 11
@@ -210,7 +210,7 @@ Partial Class FrmJuego
         Me.Button13.BackColor = System.Drawing.Color.LawnGreen
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Location = New System.Drawing.Point(272, 315)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(2)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(43, 37)
         Me.Button13.TabIndex = 12
@@ -222,7 +222,7 @@ Partial Class FrmJuego
         Me.Button14.BackColor = System.Drawing.Color.LawnGreen
         Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Location = New System.Drawing.Point(198, 315)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(2)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(43, 37)
         Me.Button14.TabIndex = 13
@@ -234,7 +234,7 @@ Partial Class FrmJuego
         Me.Button15.BackColor = System.Drawing.Color.LawnGreen
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Location = New System.Drawing.Point(605, 379)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(2)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(43, 37)
         Me.Button15.TabIndex = 14
@@ -246,7 +246,7 @@ Partial Class FrmJuego
         Me.Button16.BackColor = System.Drawing.Color.LawnGreen
         Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(636, 315)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(2)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(43, 37)
         Me.Button16.TabIndex = 15
@@ -258,7 +258,7 @@ Partial Class FrmJuego
         Me.Button17.BackColor = System.Drawing.Color.LawnGreen
         Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(770, 379)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(2)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(43, 37)
         Me.Button17.TabIndex = 16
@@ -270,7 +270,7 @@ Partial Class FrmJuego
         Me.Button18.BackColor = System.Drawing.Color.LawnGreen
         Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(684, 379)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(2)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(43, 37)
         Me.Button18.TabIndex = 17
@@ -282,7 +282,7 @@ Partial Class FrmJuego
         Me.Button19.BackColor = System.Drawing.Color.LawnGreen
         Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(718, 315)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(2)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(43, 37)
         Me.Button19.TabIndex = 18
@@ -294,7 +294,7 @@ Partial Class FrmJuego
         Me.Button20.BackColor = System.Drawing.Color.LawnGreen
         Me.Button20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.Location = New System.Drawing.Point(474, 440)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(2)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(43, 37)
         Me.Button20.TabIndex = 19
@@ -306,7 +306,7 @@ Partial Class FrmJuego
         Me.Button21.BackColor = System.Drawing.Color.LawnGreen
         Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.Location = New System.Drawing.Point(407, 440)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(2)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(43, 37)
         Me.Button21.TabIndex = 20
@@ -318,7 +318,7 @@ Partial Class FrmJuego
         Me.Button22.BackColor = System.Drawing.Color.LawnGreen
         Me.Button22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.Location = New System.Drawing.Point(341, 440)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(2)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(43, 37)
         Me.Button22.TabIndex = 21
@@ -330,7 +330,7 @@ Partial Class FrmJuego
         Me.Button23.BackColor = System.Drawing.Color.LawnGreen
         Me.Button23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.Location = New System.Drawing.Point(266, 440)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(2)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(43, 37)
         Me.Button23.TabIndex = 22
@@ -342,7 +342,7 @@ Partial Class FrmJuego
         Me.Button24.BackColor = System.Drawing.Color.LawnGreen
         Me.Button24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.Location = New System.Drawing.Point(188, 440)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(2)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(43, 37)
         Me.Button24.TabIndex = 23
@@ -354,7 +354,7 @@ Partial Class FrmJuego
         Me.Button25.BackColor = System.Drawing.Color.LawnGreen
         Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button25.Location = New System.Drawing.Point(634, 440)
-        Me.Button25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button25.Margin = New System.Windows.Forms.Padding(2)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(43, 37)
         Me.Button25.TabIndex = 24
@@ -366,7 +366,7 @@ Partial Class FrmJuego
         Me.Button26.BackColor = System.Drawing.Color.LawnGreen
         Me.Button26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button26.Location = New System.Drawing.Point(552, 440)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button26.Margin = New System.Windows.Forms.Padding(2)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(43, 37)
         Me.Button26.TabIndex = 25
@@ -378,7 +378,7 @@ Partial Class FrmJuego
         Me.Button27.BackColor = System.Drawing.Color.LawnGreen
         Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button27.Location = New System.Drawing.Point(713, 440)
-        Me.Button27.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button27.Margin = New System.Windows.Forms.Padding(2)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(43, 37)
         Me.Button27.TabIndex = 26
@@ -390,7 +390,7 @@ Partial Class FrmJuego
         Me.Btninicio.BackColor = System.Drawing.Color.LimeGreen
         Me.Btninicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btninicio.Location = New System.Drawing.Point(814, 28)
-        Me.Btninicio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btninicio.Margin = New System.Windows.Forms.Padding(2)
         Me.Btninicio.Name = "Btninicio"
         Me.Btninicio.Size = New System.Drawing.Size(70, 41)
         Me.Btninicio.TabIndex = 31
@@ -402,9 +402,9 @@ Partial Class FrmJuego
         Me.GrbPalabras.BackColor = System.Drawing.Color.SpringGreen
         Me.GrbPalabras.Controls.Add(Me.LblPalabras)
         Me.GrbPalabras.Location = New System.Drawing.Point(46, 93)
-        Me.GrbPalabras.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrbPalabras.Margin = New System.Windows.Forms.Padding(2)
         Me.GrbPalabras.Name = "GrbPalabras"
-        Me.GrbPalabras.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GrbPalabras.Padding = New System.Windows.Forms.Padding(2)
         Me.GrbPalabras.Size = New System.Drawing.Size(476, 157)
         Me.GrbPalabras.TabIndex = 32
         Me.GrbPalabras.TabStop = False
@@ -436,7 +436,7 @@ Partial Class FrmJuego
         Me.imgAhorcado.BackColor = System.Drawing.Color.Transparent
         Me.imgAhorcado.InitialImage = Global.Ahorcado.My.Resources.Resources.ahorcado2
         Me.imgAhorcado.Location = New System.Drawing.Point(562, 37)
-        Me.imgAhorcado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.imgAhorcado.Margin = New System.Windows.Forms.Padding(2)
         Me.imgAhorcado.Name = "imgAhorcado"
         Me.imgAhorcado.Size = New System.Drawing.Size(251, 224)
         Me.imgAhorcado.TabIndex = 28
@@ -495,7 +495,7 @@ Partial Class FrmJuego
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmJuego"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ahorcado"
