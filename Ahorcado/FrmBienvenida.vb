@@ -17,7 +17,7 @@
         Else
             Dim miControl As Control() = Me.Controls.Find("txtNombreUsuario", True)
             If miControl(0).Text <> "" Then
-                ranking.usuarios.Add(miControl(0).Text)
+                ranking.Usuarios.Add(miControl(0).Text)
                 miControl(0).Text = ""
                 FrmDificultad.Show()
                 Hide()
