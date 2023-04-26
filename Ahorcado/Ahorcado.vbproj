@@ -103,10 +103,10 @@
     <Compile Include="FrmgameOver.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginAdmin.Designer.vb">
-      <DependentUpon>LoginAdmin.vb</DependentUpon>
+    <Compile Include="FrmLoginAdmin.Designer.vb">
+      <DependentUpon>FrmLoginAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="LoginAdmin.vb">
+    <Compile Include="FrmLoginAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -149,8 +149,8 @@
     <EmbeddedResource Include="FrmgameOver.resx">
       <DependentUpon>FrmgameOver.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginAdmin.resx">
-      <DependentUpon>LoginAdmin.vb</DependentUpon>
+    <EmbeddedResource Include="FrmLoginAdmin.resx">
+      <DependentUpon>FrmLoginAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

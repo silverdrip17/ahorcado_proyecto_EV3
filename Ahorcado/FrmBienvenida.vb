@@ -36,5 +36,8 @@
         Hide()
     End Sub
 
-
+    Private Sub BtnLoginAdmin_Click(sender As Object, e As EventArgs) Handles BtnLoginAdmin.Click
+        FrmLoginAdmin.Show()
+        Hide()
+    End Sub
 End Class
