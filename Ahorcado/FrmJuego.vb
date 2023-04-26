@@ -53,7 +53,6 @@ Public Class FrmJuego
         If word.Equals(palabraActual) Then
             tmrTiempo.Enabled = False
             ranking.TiempoRespuesta = lblTimer.Text
-            MessageBox.Show(ranking.TiempoRespuesta)
             FrmVictoria.Show()
             Me.Close()
         End If
@@ -126,6 +125,7 @@ Public Class FrmJuego
         If lblTimer.Text = 0 Then
             tmrTiempo.Enabled = False
             Me.Close()
+            FrmgameOver.Show()
         End If
     End Sub
 End Class
