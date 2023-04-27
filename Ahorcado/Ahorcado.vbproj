@@ -109,6 +109,12 @@
     <Compile Include="FrmLoginAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmAadiralabras.Designer.vb">
+      <DependentUpon>FrmAadiralabras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAadiralabras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

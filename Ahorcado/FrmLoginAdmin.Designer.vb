@@ -40,7 +40,6 @@ Partial Class FrmLoginAdmin
         Me.Txtusuario.Name = "Txtusuario"
         Me.Txtusuario.Size = New System.Drawing.Size(176, 22)
         Me.Txtusuario.TabIndex = 0
-        Me.Txtusuario.Text = "Usuario"
         '
         'Txtcontraseña
         '
@@ -48,7 +47,6 @@ Partial Class FrmLoginAdmin
         Me.Txtcontraseña.Name = "Txtcontraseña"
         Me.Txtcontraseña.Size = New System.Drawing.Size(176, 22)
         Me.Txtcontraseña.TabIndex = 1
-        Me.Txtcontraseña.Text = "Contraseña"
         '
         'PictureBox1
         '
@@ -100,7 +98,7 @@ Partial Class FrmLoginAdmin
         Me.Label1.Text = "login admin"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'LoginAdmin
+        'FrmLoginAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -112,7 +110,7 @@ Partial Class FrmLoginAdmin
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Txtcontraseña)
         Me.Controls.Add(Me.Txtusuario)
-        Me.Name = "LoginAdmin"
+        Me.Name = "FrmLoginAdmin"
         Me.Text = "LoginAdmin"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
