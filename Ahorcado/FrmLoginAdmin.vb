@@ -22,7 +22,6 @@
     End Sub
 
 
-
     Private Sub FrmLoginAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Txtcontraseña.UseSystemPasswordChar = True
     End Sub
