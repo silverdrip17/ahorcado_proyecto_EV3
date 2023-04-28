@@ -2,5 +2,5 @@
 
 Module Module1
     Public listaPalabras As New ListaPalabras
-    Public ranking As New Ranking
+    Public ranking As Ranking
 End Module

@@ -9,6 +9,10 @@ Public Class FrmJuego
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LblletrasFalladas.Visible = True
+        imgAhorcado.Visible = True
+        LblletrasFalladas.ForeColor = Color.Black
+
 
         palabraActual = SetWord()
         lblTimer.Text = 60
@@ -54,7 +58,7 @@ Public Class FrmJuego
         If word.Equals(palabraActual) Then
             tmrTiempo.Enabled = False
             ranking.Rondas += 1
-            ranking.TiempoRespuesta.Add(lblTimer.Text)
+            ranking.TiempoRespuesta += (60 - lblTimer.Text)
             FrmVictoria.Show()
             Me.Close()
         End If
@@ -91,12 +95,11 @@ Public Class FrmJuego
                 boton.Hide()
                 fallos += 1
 
+                'cambiar imagenes
                 Select Case fallos
                     Case 1
                         imgAhorcado.Image = My.Resources.el_ahorcado1
-                        LblletrasFalladas.Visible = True
-                        imgAhorcado.Visible = True
-                        LblletrasFalladas.ForeColor = Color.Black
+
 
                     Case 2
                         imgAhorcado.Image = My.Resources.el_ahorcado2
@@ -113,9 +116,12 @@ Public Class FrmJuego
                     Case 6
                         imgAhorcado.Image = My.Resources.el_ahorcado6
 
-                        FrmgameOver.Show()
-                        Me.Close()
                 End Select
+
+                'si he perdido
+                ranking.TiempoRespuesta += (60 - lblTimer.Text)
+                FrmgameOver.Show()
+                Me.Close()
             End If
         End If
     End Sub

@@ -13,4 +13,9 @@ Public Class FrmgameOver
         FrmBienvenida.Show()
         Me.Close()
     End Sub
+
+
+    Private Sub FrmgameOver_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblRanking.Text = ranking.GetFinalRanking
+    End Sub
 End Class

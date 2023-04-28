@@ -44,7 +44,7 @@
                     Return palabraAleatoria
                 End If
 
-            Loop
+            Loop While posicionTmp = value
         End If
 
         Return palabraAleatoria
