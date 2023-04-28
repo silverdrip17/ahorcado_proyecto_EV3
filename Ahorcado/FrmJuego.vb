@@ -62,11 +62,13 @@ Public Class FrmJuego
     End Function
 
     Private Sub Btninicio_Click(sender As Object, e As EventArgs) Handles Btninicio.Click
+        tmrTiempo.Stop()
         Dim result As Integer = MessageBox.Show("¿Seguro quieres abandonar la partida?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
         If result = DialogResult.Yes Then
             FrmBienvenida.Show()
             Me.Close()
         ElseIf result = DialogResult.No Then
+            tmrTiempo.Start()
             Exit Sub
         End If
     End Sub

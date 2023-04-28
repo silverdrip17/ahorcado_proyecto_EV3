@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmInstrucciones
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmInstrucciones
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -28,7 +28,6 @@ Partial Class FrmInstrucciones
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnFacil = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -93,24 +92,12 @@ Partial Class FrmInstrucciones
         Me.btnFacil.BackColor = System.Drawing.Color.White
         Me.btnFacil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnFacil.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFacil.Location = New System.Drawing.Point(220, 279)
+        Me.btnFacil.Location = New System.Drawing.Point(330, 281)
         Me.btnFacil.Name = "btnFacil"
         Me.btnFacil.Size = New System.Drawing.Size(136, 44)
         Me.btnFacil.TabIndex = 5
         Me.btnFacil.Text = "Volver"
         Me.btnFacil.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(434, 279)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 44)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Jugar"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'FrmInstrucciones
         '
@@ -120,7 +107,6 @@ Partial Class FrmInstrucciones
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(844, 450)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnFacil)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -142,5 +128,4 @@ Partial Class FrmInstrucciones
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents btnFacil As Button
-    Friend WithEvents Button1 As Button
 End Class
