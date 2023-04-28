@@ -140,6 +140,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAadiralabras.resx">
+      <DependentUpon>FrmAadiralabras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInstrucciones.resx">
       <DependentUpon>FrmInstrucciones.vb</DependentUpon>
     </EmbeddedResource>

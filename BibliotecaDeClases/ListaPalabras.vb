@@ -19,7 +19,7 @@
         End If
 
     End Sub
-    Private ReadOnly Property Palabras() As String()
+    Public ReadOnly Property Palabras() As String()
         Get
             Return aPalabras
         End Get
