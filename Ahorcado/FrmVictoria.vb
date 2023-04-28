@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Btnreset_Click(sender As Object, e As EventArgs) Handles Btnreset.Click
-        FrmDificultad.Show()
+        FrmJuego.Show()
         Me.Close()
     End Sub
 
