@@ -1,5 +1,7 @@
-﻿Public Class FrmBienvenida
+﻿Imports BibliotecaDeClases
 
+Public Class FrmBienvenida
+    Public ranking As Ranking
     Private Sub btnJugar_Click(sender As Object, e As EventArgs) Handles btnJugar.Click
 
         'TODO preguntar si hay usuario o no
@@ -15,6 +17,7 @@
         Else
 
             If miControl(0).Text <> "" Then
+                ranking = New Ranking
                 ranking.Usuarios.Add(miControl(0).Text)
                 miControl(0).Text = ""
                 FrmDificultad.Show()

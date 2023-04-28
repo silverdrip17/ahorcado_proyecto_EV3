@@ -6,7 +6,7 @@ Public Class FrmJuego
     Public Property aLetters As Char()
     Public Property palabraActual As String
     Public listaDePalabras As New ListaPalabras
-    Private ranking As New Ranking
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -53,6 +53,7 @@ Public Class FrmJuego
         LblPalabras.Text = word
         If word.Equals(palabraActual) Then
             tmrTiempo.Enabled = False
+            ranking.Rondas += 1
             ranking.TiempoRespuesta.Add(lblTimer.Text)
             FrmVictoria.Show()
             Me.Close()
