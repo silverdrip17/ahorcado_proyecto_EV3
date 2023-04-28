@@ -118,10 +118,12 @@ Public Class FrmJuego
 
                 End Select
 
-                'si he perdido
-                ranking.TiempoRespuesta += (60 - lblTimer.Text)
-                FrmgameOver.Show()
-                Me.Close()
+                If fallos = 6 Then
+                    ranking.TiempoRespuesta += (60 - lblTimer.Text)
+                    FrmgameOver.Show()
+                    Me.Close()
+                End If
+
             End If
         End If
     End Sub
