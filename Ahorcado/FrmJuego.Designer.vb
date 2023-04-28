@@ -63,7 +63,7 @@ Partial Class FrmJuego
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(160, 388)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -75,7 +75,7 @@ Partial Class FrmJuego
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(316, 466)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -87,7 +87,7 @@ Partial Class FrmJuego
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button3.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(215, 466)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -99,7 +99,7 @@ Partial Class FrmJuego
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(113, 466)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -111,7 +111,7 @@ Partial Class FrmJuego
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(427, 466)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -123,7 +123,7 @@ Partial Class FrmJuego
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(523, 466)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -135,7 +135,7 @@ Partial Class FrmJuego
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button7.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(611, 466)
         Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -147,7 +147,7 @@ Partial Class FrmJuego
         '
         'Button8
         '
-        Me.Button8.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button8.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(711, 466)
         Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -159,7 +159,7 @@ Partial Class FrmJuego
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button9.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(744, 388)
         Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -171,7 +171,7 @@ Partial Class FrmJuego
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button10.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(655, 388)
         Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -183,7 +183,7 @@ Partial Class FrmJuego
         '
         'Button11
         '
-        Me.Button11.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button11.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(567, 388)
         Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -195,7 +195,7 @@ Partial Class FrmJuego
         '
         'Button12
         '
-        Me.Button12.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button12.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(467, 388)
         Me.Button12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -207,7 +207,7 @@ Partial Class FrmJuego
         '
         'Button13
         '
-        Me.Button13.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button13.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Location = New System.Drawing.Point(363, 388)
         Me.Button13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -219,7 +219,7 @@ Partial Class FrmJuego
         '
         'Button14
         '
-        Me.Button14.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button14.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Location = New System.Drawing.Point(264, 388)
         Me.Button14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -231,7 +231,7 @@ Partial Class FrmJuego
         '
         'Button15
         '
-        Me.Button15.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button15.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Location = New System.Drawing.Point(807, 466)
         Me.Button15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -243,7 +243,7 @@ Partial Class FrmJuego
         '
         'Button16
         '
-        Me.Button16.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button16.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(848, 388)
         Me.Button16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -255,7 +255,7 @@ Partial Class FrmJuego
         '
         'Button17
         '
-        Me.Button17.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button17.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(1027, 466)
         Me.Button17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -267,7 +267,7 @@ Partial Class FrmJuego
         '
         'Button18
         '
-        Me.Button18.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button18.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(912, 466)
         Me.Button18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -279,7 +279,7 @@ Partial Class FrmJuego
         '
         'Button19
         '
-        Me.Button19.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button19.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(957, 388)
         Me.Button19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -291,7 +291,7 @@ Partial Class FrmJuego
         '
         'Button20
         '
-        Me.Button20.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button20.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.Location = New System.Drawing.Point(632, 542)
         Me.Button20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -303,7 +303,7 @@ Partial Class FrmJuego
         '
         'Button21
         '
-        Me.Button21.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button21.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.Location = New System.Drawing.Point(543, 542)
         Me.Button21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -315,7 +315,7 @@ Partial Class FrmJuego
         '
         'Button22
         '
-        Me.Button22.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button22.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.Location = New System.Drawing.Point(455, 542)
         Me.Button22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -327,7 +327,7 @@ Partial Class FrmJuego
         '
         'Button23
         '
-        Me.Button23.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button23.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.Location = New System.Drawing.Point(355, 542)
         Me.Button23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -339,7 +339,7 @@ Partial Class FrmJuego
         '
         'Button24
         '
-        Me.Button24.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button24.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.Location = New System.Drawing.Point(251, 542)
         Me.Button24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -351,7 +351,7 @@ Partial Class FrmJuego
         '
         'Button25
         '
-        Me.Button25.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button25.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button25.Location = New System.Drawing.Point(845, 542)
         Me.Button25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -363,7 +363,7 @@ Partial Class FrmJuego
         '
         'Button26
         '
-        Me.Button26.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button26.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button26.Location = New System.Drawing.Point(736, 542)
         Me.Button26.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -375,7 +375,7 @@ Partial Class FrmJuego
         '
         'Button27
         '
-        Me.Button27.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button27.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button27.Location = New System.Drawing.Point(951, 542)
         Me.Button27.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -443,11 +443,11 @@ Partial Class FrmJuego
         'lblTimer
         '
         Me.lblTimer.AutoSize = True
-        Me.lblTimer.Font = New System.Drawing.Font("Tahoma", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTimer.Font = New System.Drawing.Font("Tahoma", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTimer.Location = New System.Drawing.Point(94, 55)
         Me.lblTimer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTimer.Name = "lblTimer"
-        Me.lblTimer.Size = New System.Drawing.Size(0, 40)
+        Me.lblTimer.Size = New System.Drawing.Size(0, 30)
         Me.lblTimer.TabIndex = 34
         '
         'tmrTiempo
