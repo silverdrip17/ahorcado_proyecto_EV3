@@ -9,9 +9,8 @@ Public Class FrmJuego
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LblletrasFalladas.Visible = True
-        imgAhorcado.Visible = True
-        LblletrasFalladas.ForeColor = Color.Black
+        'LblletrasFalladas.Visible = True
+        'imgAhorcado.Visible = True
 
 
         palabraActual = SetWord()
@@ -25,7 +24,7 @@ Public Class FrmJuego
         LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
             LblPalabras.Text += " _ "
-            sustitucionCaracteres(i) = "_"c
+            sustitucionCaracteres(i) = "_"
         Next
 
         Return palabraTmp
@@ -45,7 +44,7 @@ Public Class FrmJuego
                 word += sustitucionCaracteres(cont).ToString()
             Else
 
-                If sustitucionCaracteres(cont) = "_"c Then
+                If sustitucionCaracteres(cont) = "_" Then
                     word += " _ "
                 Else
                     word += sustitucionCaracteres(cont).ToString()

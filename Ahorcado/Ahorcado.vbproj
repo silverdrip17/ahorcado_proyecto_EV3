@@ -73,12 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmInstrucciones.Designer.vb">
-      <DependentUpon>FrmInstrucciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmInstrucciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmJuego.Designer.vb">
       <DependentUpon>FrmJuego.vb</DependentUpon>
     </Compile>
@@ -142,9 +136,6 @@
   <ItemGroup>
     <EmbeddedResource Include="FrmAadiralabras.resx">
       <DependentUpon>FrmAadiralabras.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmInstrucciones.resx">
-      <DependentUpon>FrmInstrucciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJuego.resx">
       <DependentUpon>FrmJuego.vb</DependentUpon>
