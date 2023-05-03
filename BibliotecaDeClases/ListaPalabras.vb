@@ -7,11 +7,9 @@
 
 
     Public Sub New()
-        Dim fileReader As String
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
         If System.IO.File.Exists("../../Soluciones/soluciones.txt") Then
-            fileReader = My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt")
-            Me.aPalabras = fileReader.Split(" ")
+            aPalabras = System.IO.File.ReadAllLines("../../Soluciones/soluciones.txt")
         Else
             aPalabras = {"abecedario", "insti", "cinco", "año"}
             System.IO.File.WriteAllLines("../../Soluciones/", aPalabras)
