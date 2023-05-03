@@ -10,8 +10,12 @@
     End Sub
 
     Private Sub BtnAñadirPalabra_Click(sender As Object, e As EventArgs) Handles BtnAñadirPalabra.Click
-        My.Computer.FileSystem.WriteAllText("../../Soluciones/soluciones.txt", $" {TxtPalabraAñadir.Text}", True)
-        listaPalabras = New BibliotecaDeClases.ListaPalabras
+        If My.Computer.FileSystem.ReadAllText("../../Soluciones/soluciones.txt").Contains(TxtPalabraAñadir.Text) Then
+            MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
+        Else
+            My.Computer.FileSystem.WriteAllText("../../Soluciones/soluciones.txt", $" {TxtPalabraAñadir.Text}", True)
+            listaPalabras = New BibliotecaDeClases.ListaPalabras
+        End If
         TxtPalabraAñadir.Text = ""
         TxtPalabraAñadir.Focus()
     End Sub
