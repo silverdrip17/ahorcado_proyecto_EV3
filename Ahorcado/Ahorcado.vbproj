@@ -214,7 +214,9 @@
     <Content Include="Soluciones\soluciones.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Soluciones\Usarios.txt" />
+    <Content Include="Soluciones\Usarios.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
