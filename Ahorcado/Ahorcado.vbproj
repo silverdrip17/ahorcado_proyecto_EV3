@@ -210,5 +210,10 @@
   <ItemGroup>
     <None Include="Resources\tristeA.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Soluciones\soluciones.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
