@@ -119,7 +119,6 @@ Public Class FrmJuego
 
                 If fallos = 6 Then
                     ranking.TiempoRespuesta += (60 - tiempo)
-                    ranking.GuardarUsuario()
                     FrmgameOver.Show()
                     Me.Close()
                 End If
@@ -133,7 +132,6 @@ Public Class FrmJuego
         lblTimer.Text = tiempo
         If tiempo = 0 Then
             tmrTiempo.Enabled = False
-            ranking.GuardarUsuario()
             Me.Close()
             FrmgameOver.Show()
 
