@@ -30,6 +30,7 @@ Partial Class FrmLoginAdmin
         Me.ChbmostrarContraseña = New System.Windows.Forms.CheckBox()
         Me.Btnlogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Btncancelar = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class FrmLoginAdmin
         '
         'Btnlogin
         '
-        Me.Btnlogin.Location = New System.Drawing.Point(76, 194)
+        Me.Btnlogin.Location = New System.Drawing.Point(76, 185)
         Me.Btnlogin.Name = "Btnlogin"
         Me.Btnlogin.Size = New System.Drawing.Size(174, 31)
         Me.Btnlogin.TabIndex = 5
@@ -98,11 +99,21 @@ Partial Class FrmLoginAdmin
         Me.Label1.Text = "login admin"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Btncancelar
+        '
+        Me.Btncancelar.Location = New System.Drawing.Point(76, 222)
+        Me.Btncancelar.Name = "Btncancelar"
+        Me.Btncancelar.Size = New System.Drawing.Size(174, 31)
+        Me.Btncancelar.TabIndex = 7
+        Me.Btncancelar.Text = "Cancelar"
+        Me.Btncancelar.UseVisualStyleBackColor = True
+        '
         'FrmLoginAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(307, 261)
+        Me.Controls.Add(Me.Btncancelar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btnlogin)
         Me.Controls.Add(Me.ChbmostrarContraseña)
@@ -126,4 +137,5 @@ Partial Class FrmLoginAdmin
     Friend WithEvents ChbmostrarContraseña As CheckBox
     Friend WithEvents Btnlogin As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Btncancelar As Button
 End Class

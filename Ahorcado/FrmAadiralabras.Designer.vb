@@ -27,6 +27,7 @@ Partial Class FrmAadiralabras
         Me.BtnAñadirPalabra = New System.Windows.Forms.Button()
         Me.BtnListaPalabras = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Cbodificultad = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'TxtPalabraAñadir
@@ -73,11 +74,20 @@ Partial Class FrmAadiralabras
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Cbodificultad
+        '
+        Me.Cbodificultad.FormattingEnabled = True
+        Me.Cbodificultad.Location = New System.Drawing.Point(107, 18)
+        Me.Cbodificultad.Name = "Cbodificultad"
+        Me.Cbodificultad.Size = New System.Drawing.Size(150, 24)
+        Me.Cbodificultad.TabIndex = 5
+        '
         'FrmAadiralabras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Cbodificultad)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnListaPalabras)
         Me.Controls.Add(Me.BtnAñadirPalabra)
@@ -95,4 +105,5 @@ Partial Class FrmAadiralabras
     Friend WithEvents BtnAñadirPalabra As Button
     Friend WithEvents BtnListaPalabras As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Cbodificultad As ComboBox
 End Class
