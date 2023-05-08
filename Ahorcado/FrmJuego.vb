@@ -6,15 +6,15 @@ Public Class FrmJuego
     Public Property aLetters As Char()
     Public Property palabraActual As String
     Public listaDePalabras As New ListaPalabras
-
+    Private tiempo As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'LblletrasFalladas.Visible = True
         'imgAhorcado.Visible = True
 
-
+        tiempo = 60
         palabraActual = SetWord()
-        lblTimer.Text = 60
+        lblTimer.Text = tiempo
         tmrTiempo.Enabled = True
     End Sub
     Public Function SetWord() As String
@@ -57,7 +57,7 @@ Public Class FrmJuego
         If word.Equals(palabraActual) Then
             tmrTiempo.Enabled = False
             ranking.Rondas += 1
-            ranking.TiempoRespuesta += (60 - lblTimer.Text)
+            ranking.TiempoRespuesta += (60 - tiempo)
             FrmVictoria.Show()
             Me.Close()
         End If
@@ -118,7 +118,8 @@ Public Class FrmJuego
                 End Select
 
                 If fallos = 6 Then
-                    ranking.TiempoRespuesta += (60 - lblTimer.Text)
+                    ranking.TiempoRespuesta += (60 - tiempo)
+                    ranking.GuardarUsuario()
                     FrmgameOver.Show()
                     Me.Close()
                 End If
@@ -127,16 +128,15 @@ Public Class FrmJuego
         End If
     End Sub
 
-    Private Sub LblletrasFalladas_Click(sender As Object, e As EventArgs) Handles LblletrasFalladas.Click
-
-    End Sub
-
     Private Sub tmrTiempo_Tick(sender As Object, e As EventArgs) Handles tmrTiempo.Tick
-        lblTimer.Text = Val(lblTimer.Text) - 1
-        If lblTimer.Text = 0 Then
+        tiempo -= 1
+        lblTimer.Text = tiempo
+        If tiempo = 0 Then
             tmrTiempo.Enabled = False
+            ranking.GuardarUsuario()
             Me.Close()
             FrmgameOver.Show()
+
         End If
     End Sub
 End Class
