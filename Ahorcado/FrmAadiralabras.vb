@@ -5,21 +5,35 @@
 
     Private Sub BtnListaPalabras_Click(sender As Object, e As EventArgs) Handles BtnListaPalabras.Click
         LsbPalabras.Items.Clear()
-        LsbPalabras.Items.AddRange(listaPalabras.Palabras)
+        If Cbodificultad.SelectedItem.ToString.Equals("Normal") Then
+            listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
+            LsbPalabras.Items.AddRange(listaPalabras.Palabras)
+        Else
+            listaPalabras = New BibliotecaDeClases.ListaPalabras(False)
+            LsbPalabras.Items.AddRange(listaPalabras.Palabras)
+        End If
     End Sub
 
     Private Sub BtnAñadirPalabra_Click(sender As Object, e As EventArgs) Handles BtnAñadirPalabra.Click
+        Dim palabras As String() = {TxtPalabraAñadir.Text}
         If Cbodificultad.SelectedItem.ToString.Equals("Normal") Then
             If System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Contains(TxtPalabraAñadir.Text) Then
                 MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
             Else
-                System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", TxtPalabraAñadir.Text.ToArray)
+                System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabras)
                 listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
             End If
             TxtPalabraAñadir.Text = ""
             TxtPalabraAñadir.Focus()
         Else
-            MessageBox.Show("no")
+            If System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Contains(TxtPalabraAñadir.Text) Then
+                MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
+            Else
+                System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabras)
+                listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
+            End If
+            TxtPalabraAñadir.Text = ""
+            TxtPalabraAñadir.Focus()
         End If
     End Sub
 
