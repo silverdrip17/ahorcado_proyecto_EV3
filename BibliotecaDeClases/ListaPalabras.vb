@@ -6,14 +6,24 @@
 
 
 
-    Public Sub New()
+    Public Sub New(dificultad As Boolean)
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
-        If System.IO.File.Exists("../../Soluciones/soluciones.txt") Then
-            aPalabras = System.IO.File.ReadAllLines("../../Soluciones/soluciones.txt")
-        Else
-            aPalabras = {"abecedario", "insti", "cinco", "año"}
-            System.IO.File.WriteAllLines("../../Soluciones/", aPalabras)
+        If dificultad Then
+            If System.IO.File.Exists("./Soluciones/soluciones.txt") Then
+                aPalabras = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
+            Else
+                aPalabras = {"abecedario", "insti", "cinco", "año"}
+                System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", aPalabras)
 
+            End If
+        Else
+            If System.IO.File.Exists("./Soluciones/TextFile1.txt") Then
+                aPalabras = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
+            Else
+                aPalabras = {"abecedario", "insti", "cinco", "año"}
+                System.IO.File.WriteAllLines("./Soluciones/TextFile1.txt", aPalabras)
+
+            End If
         End If
 
     End Sub

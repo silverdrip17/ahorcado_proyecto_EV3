@@ -2,10 +2,9 @@
 
 Public Class FrmJuego
     Dim fallos As Integer = 0
-    Public Property sustitucionCaracteres As Char()
-    Public Property aLetters As Char()
+    Dim sustitucionCaracteres As Char()
+    Dim aLetters As Char()
     Public Property palabraActual As String
-    Public listaDePalabras As New ListaPalabras
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -95,6 +94,7 @@ Public Class FrmJuego
                 fallos += 1
 
                 'cambiar imagenes
+
                 Select Case fallos
                     Case 1
                         imgAhorcado.Image = My.Resources.el_ahorcado1

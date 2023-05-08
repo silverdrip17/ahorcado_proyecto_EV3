@@ -25,4 +25,14 @@
     Private Sub FrmLoginAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Txtcontraseña.UseSystemPasswordChar = True
     End Sub
+
+    Private Sub Btncancelar_Click(sender As Object, e As EventArgs) Handles Btncancelar.Click
+        FrmBienvenida.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub FrmLoginAdmin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        FrmBienvenida.Show()
+
+    End Sub
 End Class

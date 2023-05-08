@@ -184,22 +184,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado1.jpg" />
+    <None Include="imagenesAhorcado\1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado2.jpg" />
+    <None Include="imagenesAhorcado\2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado3.jpg" />
+    <None Include="imagenesAhorcado\3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado4.jpg" />
+    <None Include="imagenesAhorcado\4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado5.jpg" />
+    <None Include="imagenesAhorcado\5.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado6.jpg" />
+    <None Include="imagenesAhorcado\6.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pizarra.jpg" />
@@ -212,6 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Soluciones\soluciones.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Soluciones\TextFile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Soluciones\Usarios.txt">
