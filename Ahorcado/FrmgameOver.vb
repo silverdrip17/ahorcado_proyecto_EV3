@@ -16,6 +16,6 @@ Public Class FrmgameOver
 
 
     Private Sub FrmgameOver_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblRanking.Text = ranking.GetFinalRanking
+        lblRanking.Text = user.GetFinalRanking
     End Sub
 End Class

@@ -7,7 +7,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ahorcado", "Ahorcado\Ahorca
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BibliotecaDeClases", "BibliotecaDeClases\BibliotecaDeClases.vbproj", "{202357B3-3F65-4066-A4CE-111E87C7F095}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestProject1", "TestProject1\TestProject1.vbproj", "{B17488B7-8778-42B0-84C8-349E0665DE7C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.vbproj", "{5F11757C-1D29-4CE2-8A16-EA57477E3CCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{202357B3-3F65-4066-A4CE-111E87C7F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202357B3-3F65-4066-A4CE-111E87C7F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202357B3-3F65-4066-A4CE-111E87C7F095}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B17488B7-8778-42B0-84C8-349E0665DE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B17488B7-8778-42B0-84C8-349E0665DE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B17488B7-8778-42B0-84C8-349E0665DE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B17488B7-8778-42B0-84C8-349E0665DE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F11757C-1D29-4CE2-8A16-EA57477E3CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F11757C-1D29-4CE2-8A16-EA57477E3CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F11757C-1D29-4CE2-8A16-EA57477E3CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F11757C-1D29-4CE2-8A16-EA57477E3CCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
