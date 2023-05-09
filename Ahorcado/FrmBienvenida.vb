@@ -17,7 +17,7 @@ Public Class FrmBienvenida
         Else
 
             If miControl(0).Text <> "" Then
-                ranking = New Ranking
+                ranking = New User
                 ranking.Usuario = (miControl(0).Text)
                 miControl(0).Text = ""
                 FrmDificultad.Show()
