@@ -55,8 +55,8 @@ Public Class FrmJuego
         LblPalabras.Text = word
         If word.Equals(palabraActual) Then
             tmrTiempo.Enabled = False
-            ranking.Rondas += 1
-            ranking.TiempoRespuesta += (60 - tiempo)
+            user.Rondas += 1
+            user.TiempoRespuesta += (60 - tiempo)
             FrmVictoria.Show()
             Me.Close()
         End If
@@ -118,8 +118,8 @@ Public Class FrmJuego
                 End Select
 
                 If fallos = 6 Then
-                    ranking.TiempoRespuesta += (60 - tiempo)
-                    ranking.GuardarUsuario()
+                    user.TiempoRespuesta += (60 - tiempo)
+                    user.GuardarUsuario()
                     FrmgameOver.Show()
                     Me.Close()
                 End If
@@ -134,7 +134,7 @@ Public Class FrmJuego
         lblTimer.Text = tiempo
         If tiempo = 0 Then
             tmrTiempo.Enabled = False
-            ranking.GuardarUsuario()
+            user.GuardarUsuario()
             Me.Close()
             FrmgameOver.Show()
 

@@ -1,4 +1,4 @@
-﻿Public Class Ranking
+﻿Public Class User
     Public Property TiempoRespuesta As Integer
     Public Property Usuario As String
     Public Property Rondas As Integer
