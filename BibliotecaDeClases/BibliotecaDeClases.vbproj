@@ -64,7 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Palabra.vb" />
+    <Compile Include="Gestor.vb" />
     <Compile Include="User.vb" />
     <Compile Include="ListaPalabras.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
