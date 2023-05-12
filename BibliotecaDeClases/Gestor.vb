@@ -12,12 +12,13 @@
         For i = 0 To arrayUsuariosYPuntos.Length - 1
             Dim listaUsuarios = arrayUsuariosYPuntos(i).Split("*")
             For j = 0 To listaUsuarios.Length - 1
-                If User.Usuario = listaUsuarios(i) Then
+                If User.Usuario = listaUsuarios(0) Then
                     existeUsuario = True
                     Exit For
                 End If
             Next
             If existeUsuario Then
+                listaAUsuarios.RemoveAt(i)
                 listaAUsuarios.Add(usuarioCompleto)
                 System.IO.File.WriteAllLines("./Soluciones/Usarios.txt", listaAUsuarios)
                 Exit For
