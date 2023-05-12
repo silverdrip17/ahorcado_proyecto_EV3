@@ -185,12 +185,6 @@
     <None Include="Resources\ahorcado2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaDeClases\BibliotecaDeClases.vbproj">
-      <Project>{202357b3-3f65-4066-a4ce-111e87c7f095}</Project>
-      <Name>BibliotecaDeClases</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="imagenesAhorcado\1.jpg" />
   </ItemGroup>
   <ItemGroup>

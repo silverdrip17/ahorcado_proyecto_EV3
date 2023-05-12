@@ -33,10 +33,10 @@ Partial Class FrmgameOver
         '
         Me.Btnexit.BackColor = System.Drawing.Color.Transparent
         Me.Btnexit.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btnexit.Location = New System.Drawing.Point(327, 245)
-        Me.Btnexit.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btnexit.Location = New System.Drawing.Point(436, 302)
+        Me.Btnexit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btnexit.Name = "Btnexit"
-        Me.Btnexit.Size = New System.Drawing.Size(93, 43)
+        Me.Btnexit.Size = New System.Drawing.Size(124, 53)
         Me.Btnexit.TabIndex = 0
         Me.Btnexit.Text = "Salir"
         Me.Btnexit.UseVisualStyleBackColor = False
@@ -45,10 +45,10 @@ Partial Class FrmgameOver
         '
         Me.Btnreset.BackColor = System.Drawing.Color.Transparent
         Me.Btnreset.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btnreset.Location = New System.Drawing.Point(16, 245)
-        Me.Btnreset.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btnreset.Location = New System.Drawing.Point(21, 302)
+        Me.Btnreset.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btnreset.Name = "Btnreset"
-        Me.Btnreset.Size = New System.Drawing.Size(102, 43)
+        Me.Btnreset.Size = New System.Drawing.Size(136, 53)
         Me.Btnreset.TabIndex = 1
         Me.Btnreset.Text = "Reintentar"
         Me.Btnreset.UseVisualStyleBackColor = False
@@ -57,10 +57,10 @@ Partial Class FrmgameOver
         '
         Me.btnInicioG.BackColor = System.Drawing.Color.Transparent
         Me.btnInicioG.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicioG.Location = New System.Drawing.Point(16, 19)
-        Me.btnInicioG.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnInicioG.Location = New System.Drawing.Point(21, 23)
+        Me.btnInicioG.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnInicioG.Name = "btnInicioG"
-        Me.btnInicioG.Size = New System.Drawing.Size(68, 31)
+        Me.btnInicioG.Size = New System.Drawing.Size(91, 38)
         Me.btnInicioG.TabIndex = 2
         Me.btnInicioG.Text = "Inicio"
         Me.btnInicioG.UseVisualStyleBackColor = False
@@ -68,26 +68,27 @@ Partial Class FrmgameOver
         'lblRanking
         '
         Me.lblRanking.AutoSize = True
-        Me.lblRanking.Location = New System.Drawing.Point(178, 50)
+        Me.lblRanking.Location = New System.Drawing.Point(237, 62)
+        Me.lblRanking.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRanking.Name = "lblRanking"
-        Me.lblRanking.Size = New System.Drawing.Size(39, 13)
+        Me.lblRanking.Size = New System.Drawing.Size(48, 16)
         Me.lblRanking.TabIndex = 3
         Me.lblRanking.Text = "Label1"
         '
         'FrmgameOver
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(429, 291)
+        Me.ClientSize = New System.Drawing.Size(572, 358)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblRanking)
         Me.Controls.Add(Me.btnInicioG)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmgameOver"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GameOver"
