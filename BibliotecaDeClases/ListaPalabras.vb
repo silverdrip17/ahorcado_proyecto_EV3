@@ -3,8 +3,8 @@
 
     Private PalabrasDeFichero As String() = {}
     Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
-    Private spliteado As String() = {}
-
+    Private spliteado As New List(Of String) 
+    Private arrayPalabras As String() = {}
 
 
     Public Sub New(dificultad As Boolean)
@@ -12,7 +12,16 @@
         If dificultad Then
             If System.IO.File.Exists("./Soluciones/soluciones.txt") Then
                 PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
-                spliteado = PalabrasDeFichero(0).Split("*")
+                For i = 0 To PalabrasDeFichero.Length - 1
+
+                    spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
+                Next
+                Dim cont As Integer = 0
+                For i = 0 To PalabrasDeFichero.Length - 1 Step 2
+                    Array.Resize(arrayPalabras, arrayPalabras.Length + 1)
+                    arrayPalabras(cont) = spliteado(i)
+                    cont += 1
+                Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
                 System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", PalabrasDeFichero)
@@ -21,7 +30,16 @@
         Else
             If System.IO.File.Exists("./Soluciones/TextFile1.txt") Then
                 PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
-                spliteado = PalabrasDeFichero(0).Split("*")
+                For i = 0 To PalabrasDeFichero.Length - 1
+
+                    spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
+                Next
+                Dim cont As Integer = 0
+                For i = 0 To PalabrasDeFichero.Length - 1 Step 2
+                    Array.Resize(arrayPalabras, arrayPalabras.Length + 1)
+                    arrayPalabras(cont) = spliteado(i)
+                    cont += 1
+                Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
                 System.IO.File.WriteAllLines("./Soluciones/TextFile1.txt", PalabrasDeFichero)
@@ -32,7 +50,7 @@
     End Sub
     Public ReadOnly Property Palabras() As String()
         Get
-            Return spliteado
+            Return arrayPalabras
         End Get
     End Property
 
