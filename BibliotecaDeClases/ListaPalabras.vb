@@ -1,8 +1,9 @@
 ﻿Public Class ListaPalabras
 
 
-    Private aPalabras As String() = {}
-    Private posicionTmp As Integer = -1
+    Private PalabrasDeFichero As String() = {}
+    Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
+    Private spliteado As String() = {}
 
 
 
@@ -10,18 +11,20 @@
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
         If dificultad Then
             If System.IO.File.Exists("./Soluciones/soluciones.txt") Then
-                aPalabras = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
+                PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
+                spliteado = PalabrasDeFichero(0).Split("*")
             Else
-                aPalabras = {"abecedario", "insti", "cinco", "año"}
-                System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", aPalabras)
+                PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
+                System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", PalabrasDeFichero)
 
             End If
         Else
             If System.IO.File.Exists("./Soluciones/TextFile1.txt") Then
-                aPalabras = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
+                PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
+                spliteado = PalabrasDeFichero(0).Split("*")
             Else
-                aPalabras = {"abecedario", "insti", "cinco", "año"}
-                System.IO.File.WriteAllLines("./Soluciones/TextFile1.txt", aPalabras)
+                PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
+                System.IO.File.WriteAllLines("./Soluciones/TextFile1.txt", PalabrasDeFichero)
 
             End If
         End If
@@ -29,7 +32,7 @@
     End Sub
     Public ReadOnly Property Palabras() As String()
         Get
-            Return aPalabras
+            Return spliteado
         End Get
     End Property
 
@@ -44,7 +47,7 @@
             posicionTmp = value
         Else
             Do
-                value = random.Next(listaPalabras.Length)
+                value = random.Next(listaPalabras.Length)  ' todo No puede estar en array/listas de posiciones que ya han salido
                 palabraAleatoria = listaPalabras(value)
 
                 If posicionTmp <> value Then

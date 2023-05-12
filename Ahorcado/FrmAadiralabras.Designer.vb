@@ -28,6 +28,9 @@ Partial Class FrmAadiralabras
         Me.BtnListaPalabras = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Cbodificultad = New System.Windows.Forms.ComboBox()
+        Me.Cbocategorias = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TxtPalabraAñadir
@@ -42,7 +45,7 @@ Partial Class FrmAadiralabras
         '
         Me.LsbPalabras.FormattingEnabled = True
         Me.LsbPalabras.ItemHeight = 16
-        Me.LsbPalabras.Location = New System.Drawing.Point(521, 112)
+        Me.LsbPalabras.Location = New System.Drawing.Point(521, 131)
         Me.LsbPalabras.Name = "LsbPalabras"
         Me.LsbPalabras.Size = New System.Drawing.Size(231, 132)
         Me.LsbPalabras.TabIndex = 1
@@ -67,26 +70,57 @@ Partial Class FrmAadiralabras
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(612, 18)
+        Me.Button1.Location = New System.Drawing.Point(680, 6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 46)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Inicio"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Cbodificultad
         '
         Me.Cbodificultad.FormattingEnabled = True
-        Me.Cbodificultad.Location = New System.Drawing.Point(107, 18)
+        Me.Cbodificultad.Location = New System.Drawing.Point(82, 28)
         Me.Cbodificultad.Name = "Cbodificultad"
         Me.Cbodificultad.Size = New System.Drawing.Size(150, 24)
         Me.Cbodificultad.TabIndex = 5
+        '
+        'Cbocategorias
+        '
+        Me.Cbocategorias.FormattingEnabled = True
+        Me.Cbocategorias.Location = New System.Drawing.Point(529, 83)
+        Me.Cbocategorias.Name = "Cbocategorias"
+        Me.Cbocategorias.Size = New System.Drawing.Size(222, 24)
+        Me.Cbocategorias.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(85, 3)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(146, 25)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Dificultad"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(570, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(146, 25)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Categoria"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmAadiralabras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Cbocategorias)
         Me.Controls.Add(Me.Cbodificultad)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnListaPalabras)
@@ -106,4 +140,7 @@ Partial Class FrmAadiralabras
     Friend WithEvents BtnListaPalabras As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Cbodificultad As ComboBox
+    Friend WithEvents Cbocategorias As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
