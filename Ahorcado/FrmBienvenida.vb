@@ -17,8 +17,8 @@ Public Class FrmBienvenida
         Else
 
             If miControl(0).Text <> "" Then
-                user = New User
-                user.Usuario = (miControl(0).Text)
+                gestor.CrearUsuario()
+                gestor.User.Usuario = (miControl(0).Text)
                 miControl(0).Text = ""
                 FrmDificultad.Show()
                 Hide()

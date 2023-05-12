@@ -57,6 +57,9 @@
 
         Return palabraAleatoria
     End Function
+    Public Function AnadirPalabra(palabra As String) As String
+        ' todo comprueba que no exista la palabra y la añade (tb al fichero). Devuelve mensaje con lo ocurrido
+    End Function
 
 
 
