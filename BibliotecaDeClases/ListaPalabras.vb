@@ -2,7 +2,8 @@
 
 
     Private PalabrasDeFichero As String() = {}
-    Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
+    'Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
+    Private posicionTmp As New List(Of String)
     Private spliteado As New List(Of String) 
     Private arrayPalabras As String() = {}
 
@@ -59,28 +60,29 @@
         Dim random As Random = New Random()
         Dim value As Integer
         Dim palabraAleatoria As String
-        If posicionTmp = -1 Then
+        If posicionTmp.ToArray.Length = 0 Then
             value = random.Next(listaPalabras.Length)
             palabraAleatoria = listaPalabras(value)
-            posicionTmp = value
+            posicionTmp.Add(palabraAleatoria)
         Else
             Do
                 value = random.Next(listaPalabras.Length)  ' todo No puede estar en array/listas de posiciones que ya han salido
                 palabraAleatoria = listaPalabras(value)
 
-                If posicionTmp <> value Then
-                    posicionTmp = value
+                If Not posicionTmp.Contains(palabraAleatoria) Then
+                    posicionTmp.Add(palabraAleatoria)
                     Return palabraAleatoria
                 End If
 
-            Loop While posicionTmp = value
+            Loop While posicionTmp.Contains(palabraAleatoria)
         End If
 
         Return palabraAleatoria
     End Function
-    Public Function AnadirPalabra(palabra As String) As String
-        ' todo comprueba que no exista la palabra y la añade (tb al fichero). Devuelve mensaje con lo ocurrido
-    End Function
+    'Public Function AnadirPalabra(palabra As String) As String
+    '    ' todo comprueba que no exista la palabra y la añade (tb al fichero). Devuelve mensaje con lo ocurrido
+
+    'End Function
 
 
 
