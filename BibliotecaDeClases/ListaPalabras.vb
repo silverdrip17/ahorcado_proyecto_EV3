@@ -4,8 +4,8 @@
     Private PalabrasDeFichero As String() = {}
     'Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
     Private posicionTmp As New List(Of String)
-    Private spliteado As New List(Of String) 
-    Private arrayPalabras As String() = {}
+    Private spliteado As New List(Of String)
+    Private arrayPalabras As List(Of PalabraCategoria)
 
 
     Public Sub New(dificultad As Boolean)
@@ -18,10 +18,12 @@
                     spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
                 Next
                 Dim cont As Integer = 0
-                For i = 0 To PalabrasDeFichero.Length - 1 Step 2
-                    Array.Resize(arrayPalabras, arrayPalabras.Length + 1)
-                    arrayPalabras(cont) = spliteado(i)
-                    cont += 1
+                Dim palabraAux As New PalabraCategoria
+                For i = 0 To PalabrasDeFichero.Length - 1
+                    arrayPalabras.Add(palabraAux)
+                    arrayPalabras(i).Palabra = (spliteado(cont).ToString)
+
+                    cont += 2
                 Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
@@ -79,10 +81,38 @@
 
         Return palabraAleatoria
     End Function
-    'Public Function AnadirPalabra(palabra As String) As String
-    '    ' todo comprueba que no exista la palabra y la añade (tb al fichero). Devuelve mensaje con lo ocurrido
 
-    'End Function
+
+
+    Public Function AnadirPalabra(palabras As String(), palabra As String, dificultad As Boolean) As String
+
+        If dificultad Then
+
+            If System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Contains(palabra) Then
+                Return ("la palabra introducida ya exixte, no se va a añadir")
+            Else
+                If palabra = ("") Then
+                    Return ("No puedes dejar la palabra en blanco")
+                Else
+                    System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabras)
+                    Return ""
+                End If
+            End If
+        Else
+            If System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Contains(palabra) Then
+                Return ("la palabra introducida ya exixte, no se va a añadir")
+            Else
+                If palabra = ("") Then
+                    Return ("No puedes dejar la palabra en blanco")
+                Else
+                    System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabras)
+                    Return ""
+                End If
+
+
+            End If
+        End If
+    End Function
 
 
 

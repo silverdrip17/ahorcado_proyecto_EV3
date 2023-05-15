@@ -2,8 +2,9 @@
 
     Private CategoriaPalabras() As String = {}
     Private categoriaPal() As String = {}
-    Private auxSplit1() As String = {}
+    Private auxSplitFacil() As String = {}
     Private auxSplit() As String = {}
+    Private categorias As New List(Of String())
 
     Private Sub BtnListaPalabras_Click(sender As Object, e As EventArgs) Handles BtnListaPalabras.Click
         LsbPalabras.Items.Clear()
@@ -22,33 +23,35 @@
         If Cbodificultad.Text = Nothing Then
             MessageBox.Show("Seleccione dificultad")
         Else
-            If Cbodificultad.SelectedItem.ToString.Equals("Normal") Then
-                If System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Contains(TxtPalabraAñadir.Text) Then
-                    MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
-                Else
-                    If palabras.Contains("") Then
-                        MessageBox.Show("No puedes dejar la palabra en blanco")
-                    Else
-                        System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabras)
-                        listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
-                    End If
-                End If
-                TxtPalabraAñadir.Text = ""
-                TxtPalabraAñadir.Focus()
-            Else
-                If System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Contains(TxtPalabraAñadir.Text) Then
-                    MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
-                Else
-                    If palabras.Contains("") Then
-                        MessageBox.Show("No puedes dejar la palabra en blanco")
-                    Else
-                        System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabras)
-                        listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
-                    End If
-                    TxtPalabraAñadir.Text = ""
-                    TxtPalabraAñadir.Focus()
-                End If
-            End If
+
+            'Else
+            '    If Cbodificultad.SelectedItem.ToString.Equals("Normal") Then
+            '        If System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Contains(TxtPalabraAñadir.Text) Then
+            '            MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
+            '        Else
+            '            If palabras.Contains("") Then
+            '                MessageBox.Show("No puedes dejar la palabra en blanco")
+            '            Else
+            '                System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabras)
+            '                listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
+            '            End If
+            '        End If
+            '        TxtPalabraAñadir.Text = ""
+            '        TxtPalabraAñadir.Focus()
+            '    Else
+            '        If System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Contains(TxtPalabraAñadir.Text) Then
+            '            MessageBox.Show("la palabra introducida ya exixte, no se va a añadir")
+            '        Else
+            '            If palabras.Contains("") Then
+            '                MessageBox.Show("No puedes dejar la palabra en blanco")
+            '            Else
+            '                System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabras)
+            '                listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
+            '            End If
+            '            TxtPalabraAñadir.Text = ""
+            '            TxtPalabraAñadir.Focus()
+            '        End If
+            '    End If
         End If
     End Sub
 
@@ -72,16 +75,17 @@
     Private Sub Cbodificultad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Cbodificultad.SelectedIndexChanged
         If Cbodificultad.SelectedItem.Equals("Normal") Then
             auxSplit = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
-            For i = 0 To System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Length - 1
+            For i = 0 To auxSplit.Length - 1
                 CategoriaPalabras = auxSplit(i).Split("*")
                 For j = 0 To CategoriaPalabras.Length - 1
-                    Cbocategorias.Items.Add(CategoriaPalabras(1))
+                    categorias.AddRange(CategoriaPalabras(1).ToArray)
                 Next
             Next
+            Cbocategorias.Items.AddRange(categorias.ToArray)
         Else
-            auxSplit1 = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
-            For i = 0 To System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Length - 1
-                categoriaPal = auxSplit1(i).Split("*")
+            auxSplitFacil = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
+            For i = 0 To auxSplitFacil.Length - 1
+                categoriaPal = auxSplitFacil(i).Split("*")
                 For j = 0 To categoriaPal.Length - 1
                     Cbocategorias.Items.Add(categoriaPal(1))
                 Next

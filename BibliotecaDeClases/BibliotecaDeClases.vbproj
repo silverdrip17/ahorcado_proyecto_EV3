@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gestor.vb" />
+    <Compile Include="PalabraCategoria.vb" />
     <Compile Include="User.vb" />
     <Compile Include="ListaPalabras.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
