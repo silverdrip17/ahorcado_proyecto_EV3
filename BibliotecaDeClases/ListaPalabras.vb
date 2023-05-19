@@ -5,7 +5,7 @@
     'Private posicionTmp As Integer = -1 ' todo Array o lista con posiciones de palabras que ya han salido
     Private posicionTmp As New List(Of String)
     Private spliteado As New List(Of String)
-    Private arrayPalabras As List(Of PalabraCategoria)
+    Private arrayPalabras As New List(Of PalabraCategoria)
 
 
     Public Sub New(dificultad As Boolean)
@@ -39,9 +39,7 @@
                 Next
                 Dim cont As Integer = 0
                 For i = 0 To PalabrasDeFichero.Length - 1 Step 2
-                    Array.Resize(arrayPalabras, arrayPalabras.Length + 1)
-                    arrayPalabras(cont) = spliteado(i)
-                    cont += 1
+                    'todo cambiar todo a clase palabra
                 Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
@@ -51,25 +49,25 @@
         End If
 
     End Sub
-    Public ReadOnly Property Palabras() As String()
+    Public ReadOnly Property Palabras() As List(Of PalabraCategoria)
         Get
             Return arrayPalabras
         End Get
     End Property
 
     Public Function PalabraAAdivinar() As String
-        Dim listaPalabras As String() = Palabras()
+        Dim listaPalabras As List(Of PalabraCategoria) = Palabras()
         Dim random As Random = New Random()
         Dim value As Integer
         Dim palabraAleatoria As String
         If posicionTmp.ToArray.Length = 0 Then
-            value = random.Next(listaPalabras.Length)
-            palabraAleatoria = listaPalabras(value)
+            value = random.Next(listaPalabras.ToArray.Length)
+            palabraAleatoria = listaPalabras.Item(value).Palabra
             posicionTmp.Add(palabraAleatoria)
         Else
             Do
-                value = random.Next(listaPalabras.Length)  ' todo No puede estar en array/listas de posiciones que ya han salido
-                palabraAleatoria = listaPalabras(value)
+                value = random.Next(listaPalabras.ToArray.Length)  ' todo No puede estar en array/listas de posiciones que ya han salido
+                palabraAleatoria = listaPalabras.Item(value).Palabra
 
                 If Not posicionTmp.Contains(palabraAleatoria) Then
                     posicionTmp.Add(palabraAleatoria)
