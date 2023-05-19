@@ -25,7 +25,8 @@
             End If
         Next
         If Not existeUsuario Then
-            System.IO.File.AppendAllLines($"./Soluciones/Usarios.txt", usuarioCompleto.ToArray)
+            Dim miArray() As String = {usuarioCompleto}
+            System.IO.File.AppendAllLines($"./Soluciones/Usarios.txt", miArray)
 
         End If
 
