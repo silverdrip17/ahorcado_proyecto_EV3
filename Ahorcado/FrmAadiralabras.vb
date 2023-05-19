@@ -10,10 +10,10 @@
         LsbPalabras.Items.Clear()
         If Cbodificultad.SelectedItem.ToString.Equals("Normal") Then
             listaPalabras = New BibliotecaDeClases.ListaPalabras(True)
-            LsbPalabras.Items.AddRange(listaPalabras.Palabras)
+            LsbPalabras.Items.AddRange(listaPalabras.Palabras.ToArray)
         Else
             listaPalabras = New BibliotecaDeClases.ListaPalabras(False)
-            LsbPalabras.Items.AddRange(listaPalabras.Palabras)
+            LsbPalabras.Items.AddRange(listaPalabras.Palabras.ToArray)
         End If
 
     End Sub
