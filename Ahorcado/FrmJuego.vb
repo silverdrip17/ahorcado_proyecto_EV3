@@ -10,15 +10,16 @@ Public Class FrmJuego
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'LblletrasFalladas.Visible = True
         'imgAhorcado.Visible = True
-
+        Dim palabraTmp As PalabraCategoria = SetWord()
         tiempo = 60
-        palabraActual = SetWord()
+        palabraActual = palabraTmp.Palabra
         lblTimer.Text = tiempo
         tmrTiempo.Enabled = True
+        lblCategoria.Text = palabraTmp.Categoria
     End Sub
-    Public Function SetWord() As String
-        Dim palabraTmp As String = listaPalabras.PalabraAAdivinar
-        Dim aLength As Integer = palabraTmp.Length
+    Public Function SetWord() As PalabraCategoria
+        Dim palabraTmp As PalabraCategoria = listaPalabras.PalabraAAdivinar
+        Dim aLength As Integer = palabraTmp.Palabra.Length
         sustitucionCaracteres = New Char(aLength - 1) {}
         LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
@@ -140,4 +141,6 @@ Public Class FrmJuego
 
         End If
     End Sub
+
+
 End Class

@@ -36,43 +36,47 @@ Partial Class FrmAadiralabras
         'TxtPalabraAñadir
         '
         Me.TxtPalabraAñadir.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.TxtPalabraAñadir.Location = New System.Drawing.Point(129, 116)
+        Me.TxtPalabraAñadir.Location = New System.Drawing.Point(97, 94)
+        Me.TxtPalabraAñadir.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtPalabraAñadir.Name = "TxtPalabraAñadir"
-        Me.TxtPalabraAñadir.Size = New System.Drawing.Size(344, 22)
+        Me.TxtPalabraAñadir.Size = New System.Drawing.Size(259, 20)
         Me.TxtPalabraAñadir.TabIndex = 0
         '
         'LsbPalabras
         '
         Me.LsbPalabras.FormattingEnabled = True
-        Me.LsbPalabras.ItemHeight = 16
-        Me.LsbPalabras.Location = New System.Drawing.Point(521, 131)
+        Me.LsbPalabras.Location = New System.Drawing.Point(391, 106)
+        Me.LsbPalabras.Margin = New System.Windows.Forms.Padding(2)
         Me.LsbPalabras.Name = "LsbPalabras"
-        Me.LsbPalabras.Size = New System.Drawing.Size(231, 132)
+        Me.LsbPalabras.Size = New System.Drawing.Size(174, 108)
         Me.LsbPalabras.TabIndex = 1
         '
         'BtnAñadirPalabra
         '
-        Me.BtnAñadirPalabra.Location = New System.Drawing.Point(127, 215)
+        Me.BtnAñadirPalabra.Location = New System.Drawing.Point(95, 175)
+        Me.BtnAñadirPalabra.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnAñadirPalabra.Name = "BtnAñadirPalabra"
-        Me.BtnAñadirPalabra.Size = New System.Drawing.Size(105, 54)
+        Me.BtnAñadirPalabra.Size = New System.Drawing.Size(79, 44)
         Me.BtnAñadirPalabra.TabIndex = 2
         Me.BtnAñadirPalabra.Text = "Añadir palabra"
         Me.BtnAñadirPalabra.UseVisualStyleBackColor = True
         '
         'BtnListaPalabras
         '
-        Me.BtnListaPalabras.Location = New System.Drawing.Point(339, 215)
+        Me.BtnListaPalabras.Location = New System.Drawing.Point(254, 175)
+        Me.BtnListaPalabras.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnListaPalabras.Name = "BtnListaPalabras"
-        Me.BtnListaPalabras.Size = New System.Drawing.Size(105, 54)
+        Me.BtnListaPalabras.Size = New System.Drawing.Size(79, 44)
         Me.BtnListaPalabras.TabIndex = 3
         Me.BtnListaPalabras.Text = "lista de palabras"
         Me.BtnListaPalabras.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(680, 6)
+        Me.Button1.Location = New System.Drawing.Point(510, 5)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 46)
+        Me.Button1.Size = New System.Drawing.Size(81, 37)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Inicio"
         Me.Button1.UseVisualStyleBackColor = True
@@ -80,25 +84,28 @@ Partial Class FrmAadiralabras
         'Cbodificultad
         '
         Me.Cbodificultad.FormattingEnabled = True
-        Me.Cbodificultad.Location = New System.Drawing.Point(82, 28)
+        Me.Cbodificultad.Location = New System.Drawing.Point(62, 23)
+        Me.Cbodificultad.Margin = New System.Windows.Forms.Padding(2)
         Me.Cbodificultad.Name = "Cbodificultad"
-        Me.Cbodificultad.Size = New System.Drawing.Size(150, 24)
+        Me.Cbodificultad.Size = New System.Drawing.Size(114, 21)
         Me.Cbodificultad.TabIndex = 5
         '
         'Cbocategorias
         '
         Me.Cbocategorias.FormattingEnabled = True
-        Me.Cbocategorias.Location = New System.Drawing.Point(529, 83)
+        Me.Cbocategorias.Location = New System.Drawing.Point(397, 67)
+        Me.Cbocategorias.Margin = New System.Windows.Forms.Padding(2)
         Me.Cbocategorias.Name = "Cbocategorias"
-        Me.Cbocategorias.Size = New System.Drawing.Size(222, 24)
+        Me.Cbocategorias.Size = New System.Drawing.Size(168, 21)
         Me.Cbocategorias.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(85, 3)
+        Me.Label1.Location = New System.Drawing.Point(64, 2)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(146, 25)
+        Me.Label1.Size = New System.Drawing.Size(110, 20)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Dificultad"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -106,18 +113,19 @@ Partial Class FrmAadiralabras
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(570, 55)
+        Me.Label2.Location = New System.Drawing.Point(428, 45)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(146, 25)
+        Me.Label2.Size = New System.Drawing.Size(110, 20)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Categoria"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmAadiralabras
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Cbocategorias)
@@ -127,6 +135,7 @@ Partial Class FrmAadiralabras
         Me.Controls.Add(Me.BtnAñadirPalabra)
         Me.Controls.Add(Me.LsbPalabras)
         Me.Controls.Add(Me.TxtPalabraAñadir)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmAadiralabras"
         Me.Text = "FrnAadiralabras"
         Me.ResumeLayout(False)

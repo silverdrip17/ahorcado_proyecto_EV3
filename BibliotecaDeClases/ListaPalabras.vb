@@ -8,6 +8,7 @@
     Private arrayPalabras As New List(Of PalabraCategoria)
 
 
+
     Public Sub New(dificultad As Boolean)
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
         If dificultad Then
@@ -15,16 +16,16 @@
                 PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
                 For i = 0 To PalabrasDeFichero.Length - 1
 
-                    spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
-                    'Next
-                    'Dim cont As Integer = 0
-                    Dim palabraAux As New PalabraCategoria
-                    'For i = 0 To PalabrasDeFichero.Length - 1
-                    arrayPalabras.Add(palabraAux)
-                    Dim palabra As String = spliteado(0)
-                    arrayPalabras(i).Palabra = palabra
 
-                    'cont += 2
+                    Dim palabras As String() = PalabrasDeFichero(i).Split("*")
+
+
+                    Dim palabraAux As New PalabraCategoria(palabras(0), palabras(1), True)
+
+                    arrayPalabras.Add(palabraAux)
+
+
+
                 Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
@@ -36,11 +37,16 @@
                 PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
                 For i = 0 To PalabrasDeFichero.Length - 1
 
-                    spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
-                Next
-                Dim cont As Integer = 0
-                For i = 0 To PalabrasDeFichero.Length - 1 Step 2
-                    'todo cambiar todo a clase palabra
+
+                    Dim palabras As String() = PalabrasDeFichero(i).Split("*")
+
+
+                    Dim palabraAux As New PalabraCategoria(palabras(0), palabras(1), True)
+
+                    arrayPalabras.Add(palabraAux)
+
+
+
                 Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
@@ -56,27 +62,28 @@
         End Get
     End Property
 
-    Public Function PalabraAAdivinar() As String
+    Public Function PalabraAAdivinar() As PalabraCategoria
         Dim listaPalabras As List(Of PalabraCategoria) = Palabras()
         Dim random As Random = New Random(TimeOfDay.Second)
         Dim value As Integer
-        Dim palabraAleatoria As String
-        If posicionTmp.ToArray.Length = 0 Then
+        Dim palabraAleatoria As PalabraCategoria
+        Dim palabrasUsadas As New List(Of PalabraCategoria)
+        If palabrasUsadas.ToArray.Length = 0 Then
 
             value = random.Next(listaPalabras.ToArray.Length)
-            palabraAleatoria = listaPalabras.Item(value).Palabra
-            posicionTmp.Add(palabraAleatoria)
+            palabraAleatoria = listaPalabras.Item(value)
+            palabrasUsadas.Add(palabraAleatoria)
         Else
             Do
-                value = random.Next(listaPalabras.ToArray.Length)  ' todo No puede estar en array/listas de posiciones que ya han salido
-                palabraAleatoria = listaPalabras.Item(value).Palabra
+                value = random.Next(listaPalabras.ToArray.Length)
+                palabraAleatoria = listaPalabras.Item(value)
 
-                If Not posicionTmp.Contains(palabraAleatoria) Then
-                    posicionTmp.Add(palabraAleatoria)
+                If Not palabrasUsadas.Contains(palabraAleatoria) Then
+                    palabrasUsadas.Add(palabraAleatoria)
                     Return palabraAleatoria
                 End If
 
-            Loop While posicionTmp.Contains(palabraAleatoria)
+            Loop While palabrasUsadas.Contains(palabraAleatoria)
         End If
 
         Return palabraAleatoria
