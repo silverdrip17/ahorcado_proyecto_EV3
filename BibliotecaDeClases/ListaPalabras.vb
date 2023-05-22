@@ -16,14 +16,15 @@
                 For i = 0 To PalabrasDeFichero.Length - 1
 
                     spliteado.AddRange(PalabrasDeFichero(i).Split("*"))
-                Next
-                Dim cont As Integer = 0
-                Dim palabraAux As New PalabraCategoria
-                For i = 0 To PalabrasDeFichero.Length - 1
+                    'Next
+                    'Dim cont As Integer = 0
+                    Dim palabraAux As New PalabraCategoria
+                    'For i = 0 To PalabrasDeFichero.Length - 1
                     arrayPalabras.Add(palabraAux)
-                    arrayPalabras(i).Palabra = (spliteado(cont).ToString)
+                    Dim palabra As String = spliteado(0)
+                    arrayPalabras(i).Palabra = palabra
 
-                    cont += 2
+                    'cont += 2
                 Next
             Else
                 PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
@@ -57,10 +58,11 @@
 
     Public Function PalabraAAdivinar() As String
         Dim listaPalabras As List(Of PalabraCategoria) = Palabras()
-        Dim random As Random = New Random()
+        Dim random As Random = New Random(TimeOfDay.Second)
         Dim value As Integer
         Dim palabraAleatoria As String
         If posicionTmp.ToArray.Length = 0 Then
+
             value = random.Next(listaPalabras.ToArray.Length)
             palabraAleatoria = listaPalabras.Item(value).Palabra
             posicionTmp.Add(palabraAleatoria)
