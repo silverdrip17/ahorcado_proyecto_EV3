@@ -16,4 +16,9 @@
         FrmBienvenida.Show()
         Me.Close()
     End Sub
+
+    Private Sub BtnRanking_Click(sender As Object, e As EventArgs) Handles BtnRanking.Click
+        FrmRanking.Show()
+        Me.Close()
+    End Sub
 End Class

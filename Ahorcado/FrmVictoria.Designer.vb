@@ -26,6 +26,7 @@ Partial Class FrmVictoria
         Me.Btnexit = New System.Windows.Forms.Button()
         Me.Btnreset = New System.Windows.Forms.Button()
         Me.btnInicioW = New System.Windows.Forms.Button()
+        Me.BtnRanking = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btnexit
@@ -58,6 +59,15 @@ Partial Class FrmVictoria
         Me.btnInicioW.Text = "Inicio"
         Me.btnInicioW.UseVisualStyleBackColor = True
         '
+        'BtnRanking
+        '
+        Me.BtnRanking.Location = New System.Drawing.Point(227, 294)
+        Me.BtnRanking.Name = "BtnRanking"
+        Me.BtnRanking.Size = New System.Drawing.Size(117, 44)
+        Me.BtnRanking.TabIndex = 3
+        Me.BtnRanking.Text = "Ranking"
+        Me.BtnRanking.UseVisualStyleBackColor = True
+        '
         'FrmVictoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -66,6 +76,7 @@ Partial Class FrmVictoria
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(530, 351)
         Me.ControlBox = False
+        Me.Controls.Add(Me.BtnRanking)
         Me.Controls.Add(Me.btnInicioW)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
@@ -80,4 +91,5 @@ Partial Class FrmVictoria
     Friend WithEvents Btnexit As Button
     Friend WithEvents Btnreset As Button
     Friend WithEvents btnInicioW As Button
+    Friend WithEvents BtnRanking As Button
 End Class

@@ -1,5 +1,6 @@
 ﻿Public Class Gestor
     Public Property User As User
+    Public MostrarUsuarios As String() = System.IO.File.ReadAllLines("./Soluciones/Usarios.txt")
     Public Sub CrearUsuario()
         user = New User
     End Sub
@@ -38,4 +39,6 @@
 
 
     End Sub
+
+
 End Class
