@@ -138,10 +138,10 @@
     <Compile Include="FrmVictoria.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ranking.Designer.vb">
-      <DependentUpon>Ranking.vb</DependentUpon>
+    <Compile Include="FrmRanking.Designer.vb">
+      <DependentUpon>FrmRanking.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ranking.vb">
+    <Compile Include="FrmRanking.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -173,8 +173,8 @@
     <EmbeddedResource Include="FrmVictoria.resx">
       <DependentUpon>FrmVictoria.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ranking.resx">
-      <DependentUpon>Ranking.vb</DependentUpon>
+    <EmbeddedResource Include="FrmRanking.resx">
+      <DependentUpon>FrmRanking.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

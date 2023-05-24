@@ -10,7 +10,7 @@ Imports System.Security.Cryptography.X509Certificates
     <TestMethod()> Public Sub testPalabraAAdivinar()
         Dim palabras As String() = File.ReadAllLines("./Soluciones/soluciones.txt")
         Dim listaPalabras As New ListaPalabras(True)
-        Dim actual As String = listaPalabras.PalabraAAdivinar()
+        Dim actual As PalabraCategoria = listaPalabras.PalabraAAdivinar()
         Dim palabrasBien As New List(Of String)
         For Each palabra In palabras
             Dim arrayalabras As String() = palabra.Split("*")
@@ -29,7 +29,7 @@ Imports System.Security.Cryptography.X509Certificates
     <TestMethod()> Public Sub testPalabraAAdivinarFacil()
         Dim palabras As String() = File.ReadAllLines("./Soluciones/TextFile1.txt")
         Dim listaPalabras As New ListaPalabras(True)
-        Dim actual As String = listaPalabras.PalabraAAdivinar()
+        Dim actual As PalabraCategoria = listaPalabras.PalabraAAdivinar()
         Dim palabrasBien As New List(Of String)
         For Each palabra In palabras
             Dim arrayalabras As String() = palabra.Split("*")
