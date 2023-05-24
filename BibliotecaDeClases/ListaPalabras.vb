@@ -9,51 +9,42 @@
 
 
 
-    Public Sub New(dificultad As Boolean)
+    Public Sub New(dificultad As String)
         ' todo ¿Qué ocurre si no existe el fichero soluciones.txt?
-        If dificultad Then
-            If System.IO.File.Exists("./Soluciones/soluciones.txt") Then
-                PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/soluciones.txt")
-                For i = 0 To PalabrasDeFichero.Length - 1
-
-
-                    Dim palabras As String() = PalabrasDeFichero(i).Split("*")
-
-
-                    Dim palabraAux As New PalabraCategoria(palabras(0), palabras(1), True)
-
-                    arrayPalabras.Add(palabraAux)
-
-
-
-                Next
-            Else
-                PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
-                System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", PalabrasDeFichero)
-
-            End If
+        Dim fichero As String
+        If dificultad = "Normal" Then
+            fichero = "./Soluciones/soluciones.txt"
         Else
-            If System.IO.File.Exists("./Soluciones/TextFile1.txt") Then
-                PalabrasDeFichero = System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt")
-                For i = 0 To PalabrasDeFichero.Length - 1
-
-
-                    Dim palabras As String() = PalabrasDeFichero(i).Split("*")
-
-
-                    Dim palabraAux As New PalabraCategoria(palabras(0), palabras(1), True)
-
-                    arrayPalabras.Add(palabraAux)
-
-
-
-                Next
-            Else
-                PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
-                System.IO.File.WriteAllLines("./Soluciones/TextFile1.txt", PalabrasDeFichero)
-
-            End If
+            fichero = "./Soluciones/TextFile1.txt"
         End If
+
+        If System.IO.File.Exists(fichero) Then
+            PalabrasDeFichero = System.IO.File.ReadAllLines(fichero)
+            For i = 0 To PalabrasDeFichero.Length - 1
+
+
+                Dim palabras As String() = PalabrasDeFichero(i).Split("*")
+
+
+                Dim palabraAux As New PalabraCategoria(palabras(0), palabras(1), "Normal")
+
+                arrayPalabras.Add(palabraAux)
+
+
+
+            Next
+        Else ' todo Si no existe fichero arrayPalabras vacío???
+            PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
+            arrayPalabras.AddRange(PalabrasDeFichero)
+            System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", PalabrasDeFichero)
+
+        End If
+
+
+
+
+
+
 
     End Sub
     Public ReadOnly Property Palabras() As List(Of PalabraCategoria)
@@ -91,36 +82,27 @@
 
 
 
-    Public Function AnadirPalabra(palabras As String(), palabra As String, dificultad As Boolean) As String
 
-        If dificultad Then
 
-            If System.IO.File.ReadAllLines("./Soluciones/soluciones.txt").Contains(palabra) Then
-                Return ("la palabra introducida ya exixte, no se va a añadir")
-            Else
-                If palabra = ("") Then
-                    Return ("No puedes dejar la palabra en blanco")
-                Else
-                    System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabras)
-                    Return ""
-                End If
-            End If
+    Public Function AnadirPalabra(palabraAAnadirStr As String, categoria As String, dificultad As String) As String
+
+        Dim Palabra As New PalabraCategoria(palabraAAnadirStr, categoria, dificultad)
+        Dim fichero As String
+        If dificultad = "Normal" Then
+            fichero = "./Soluciones/soluciones.txt"
         Else
-            If System.IO.File.ReadAllLines("./Soluciones/TextFile1.txt").Contains(palabra) Then
-                Return ("la palabra introducida ya exixte, no se va a añadir")
-            Else
-                If palabra = ("") Then
-                    Return ("No puedes dejar la palabra en blanco")
-                Else
-                    System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabras)
-                    Return ""
-                End If
-
-
-            End If
+            fichero = "./Soluciones/TextFile1.txt"
         End If
+
+        If arrayPalabras.Contains(Palabra) Then
+            Return $"La palabra {Palabra.Palabra} ya existe"
+        Else
+            Dim palabraFichero As String() = {$"{Palabra.Palabra}*{Palabra.Categoria}"}
+            System.IO.File.AppendAllLines(fichero, palabraFichero)
+            Return ""
+        End If
+
+
     End Function
-
-
 
 End Class

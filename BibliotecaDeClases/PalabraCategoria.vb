@@ -3,50 +3,19 @@
 
     Public Property Palabra As String
     Public Property Categoria As String
-    Public Property Dificultad As Boolean
+    Public Property Dificultad As String
 
     Public Sub New()
     End Sub
 
-    Public Sub New(palabra As String, categoria As String, dificultad As Boolean)
+    Public Sub New(palabra As String, categoria As String, dificultad As String)
         Me.Palabra = palabra
         Me.Categoria = categoria
         Me.Dificultad = dificultad
     End Sub
 
-    Public Function AnadirPalabra(palabraAAnadirStr As String, categoria As String, dificultad As String) As String
-        Dim dificultadBool As Boolean
-        If dificultad = "Normal" Then
-            dificultadBool = True
-        Else
-            dificultad = False
-        End If
-        Dim Palabra As New PalabraCategoria(palabraAAnadirStr, categoria, dificultadBool)
 
-        Dim ListaPalabras As New ListaPalabras(dificultadBool)
 
-        Dim listaTodasPalabras As New List(Of PalabraCategoria)
-        listaTodasPalabras.AddRange(ListaPalabras.Palabras)
-
-        If dificultadBool Then
-            If listaTodasPalabras.Contains(Palabra) Then
-                Return $"La palabra {Palabra.Palabra} ya existe"
-            Else
-                Dim palabraFichero As String() = {$"{Palabra.Palabra}*{Palabra.Categoria}"}
-                System.IO.File.AppendAllLines("./Soluciones/soluciones.txt", palabraFichero)
-                Return ""
-            End If
-        Else
-            If listaTodasPalabras.Contains(Palabra) Then
-                Return $"La palabra {Palabra.Palabra} ya existe"
-            Else
-                Dim palabraFichero As String() = {$"{Palabra.Palabra}*{Palabra.Categoria}"}
-                System.IO.File.AppendAllLines("./Soluciones/TextFile1.txt", palabraFichero)
-                Return ""
-            End If
-        End If
-
-    End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean
         Return Equals(TryCast(obj, PalabraCategoria))

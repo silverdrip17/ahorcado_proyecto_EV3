@@ -7,13 +7,13 @@ Public Class FrmDificultad
     End Sub
 
     Private Sub btnNormal_Click(sender As Object, e As EventArgs) Handles btnNormal.Click
-        listaPalabras = New ListaPalabras(True)
+        listaPalabras = New ListaPalabras("Normal")
         FrmJuego.Show()
         Hide()
     End Sub
 
     Private Sub btnFacil_Click(sender As Object, e As EventArgs) Handles btnFacil.Click
-        listaPalabras = New ListaPalabras(False)
+        listaPalabras = New ListaPalabras("Fácil")
         FrmJuego.Show()
         Hide()
     End Sub

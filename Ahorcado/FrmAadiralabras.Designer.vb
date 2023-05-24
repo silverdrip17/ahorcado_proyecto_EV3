@@ -25,7 +25,6 @@ Partial Class FrmAadiralabras
         Me.TxtPalabraAñadir = New System.Windows.Forms.TextBox()
         Me.LsbPalabras = New System.Windows.Forms.ListBox()
         Me.BtnAñadirPalabra = New System.Windows.Forms.Button()
-        Me.BtnListaPalabras = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Cbodificultad = New System.Windows.Forms.ComboBox()
         Me.Cbocategorias = New System.Windows.Forms.ComboBox()
@@ -60,16 +59,6 @@ Partial Class FrmAadiralabras
         Me.BtnAñadirPalabra.TabIndex = 2
         Me.BtnAñadirPalabra.Text = "Añadir palabra"
         Me.BtnAñadirPalabra.UseVisualStyleBackColor = True
-        '
-        'BtnListaPalabras
-        '
-        Me.BtnListaPalabras.Location = New System.Drawing.Point(254, 175)
-        Me.BtnListaPalabras.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnListaPalabras.Name = "BtnListaPalabras"
-        Me.BtnListaPalabras.Size = New System.Drawing.Size(79, 44)
-        Me.BtnListaPalabras.TabIndex = 3
-        Me.BtnListaPalabras.Text = "lista de palabras"
-        Me.BtnListaPalabras.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -131,7 +120,6 @@ Partial Class FrmAadiralabras
         Me.Controls.Add(Me.Cbocategorias)
         Me.Controls.Add(Me.Cbodificultad)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.BtnListaPalabras)
         Me.Controls.Add(Me.BtnAñadirPalabra)
         Me.Controls.Add(Me.LsbPalabras)
         Me.Controls.Add(Me.TxtPalabraAñadir)
