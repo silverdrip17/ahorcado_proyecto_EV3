@@ -47,10 +47,6 @@
 
 
     End Sub
-main
-    Public Function getArrayPalabras() As String()
-        Return APalabras
-=======
     Public ReadOnly Property Palabras() As List(Of PalabraCategoria)
         Get
             Return arrayPalabras
@@ -82,7 +78,6 @@ main
         End If
 
         Return palabraAleatoria
-development
     End Function
 
 
