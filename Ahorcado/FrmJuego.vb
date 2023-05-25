@@ -2,28 +2,32 @@
 
 Public Class FrmJuego
     Dim fallos As Integer = 0
-    Public Property sustitucionCaracteres As Char()
-    Public Property aLetters As Char()
+    Dim sustitucionCaracteres As Char()
+    Dim aLetters As Char()
     Public Property palabraActual As String
-    Public listaDePalabras As New ListaPalabras
+    Private tiempo As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        palabraActual = SetWord()
+        'LblletrasFalladas.Visible = True
+        'imgAhorcado.Visible = True
+        Dim palabraTmp As PalabraCategoria = SetWord()
+        tiempo = 60
+        palabraActual = palabraTmp.Palabra
+        lblTimer.Text = tiempo
+        tmrTiempo.Enabled = True
+        lblCategoria.Text = palabraTmp.Categoria
     End Sub
-    Public Function SetWord() As String
-        Dim aPalabras As String() = listaDePalabras.getArrayPalabras()
-        LblPalabras.Text = ""
-        Dim random As Random = New Random()
-        Dim value As Integer = random.Next(aPalabras.Length)
-        Dim aLength As Integer = aPalabras(value).Length
+    Public Function SetWord() As PalabraCategoria
+        Dim palabraTmp As PalabraCategoria = listaPalabras.PalabraAAdivinar
+        Dim aLength As Integer = palabraTmp.Palabra.Length
         sustitucionCaracteres = New Char(aLength - 1) {}
-
+        LblPalabras.Text = ""
         For i As Integer = 0 To aLength - 1
             LblPalabras.Text += " _ "
-            sustitucionCaracteres(i) = "_"c
+            sustitucionCaracteres(i) = "_"
         Next
 
-        Return aPalabras(value)
+        Return palabraTmp
     End Function
 
     Public Function CheckWord(letter As Char) As Boolean
@@ -40,7 +44,7 @@ Public Class FrmJuego
                 word += sustitucionCaracteres(cont).ToString()
             Else
 
-                If sustitucionCaracteres(cont) = "_"c Then
+                If sustitucionCaracteres(cont) = "_" Then
                     word += " _ "
                 Else
                     word += sustitucionCaracteres(cont).ToString()
@@ -51,6 +55,9 @@ Public Class FrmJuego
         Next
         LblPalabras.Text = word
         If word.Equals(palabraActual) Then
+            tmrTiempo.Enabled = False
+            gestor.User.Rondas += 1
+            gestor.User.TiempoRespuesta += (60 - tiempo)
             FrmVictoria.Show()
             Me.Close()
         End If
@@ -58,8 +65,15 @@ Public Class FrmJuego
     End Function
 
     Private Sub Btninicio_Click(sender As Object, e As EventArgs) Handles Btninicio.Click
-        FrmBienvenida.Show()
-        Me.Close()
+        tmrTiempo.Stop()
+        Dim result As Integer = MessageBox.Show("¿Seguro quieres abandonar la partida?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        If result = DialogResult.Yes Then
+            FrmBienvenida.Show()
+            Me.Close()
+        ElseIf result = DialogResult.No Then
+            tmrTiempo.Start()
+            Exit Sub
+        End If
     End Sub
 
 
@@ -80,12 +94,12 @@ Public Class FrmJuego
                 boton.Hide()
                 fallos += 1
 
+                'cambiar imagenes
+
                 Select Case fallos
                     Case 1
                         imgAhorcado.Image = My.Resources.el_ahorcado1
-                        LblletrasFalladas.Visible = True
-                        imgAhorcado.Visible = True
-                        LblletrasFalladas.ForeColor = Color.Black
+
 
                     Case 2
                         imgAhorcado.Image = My.Resources.el_ahorcado2
@@ -102,10 +116,31 @@ Public Class FrmJuego
                     Case 6
                         imgAhorcado.Image = My.Resources.el_ahorcado6
 
-                        FrmgameOver.Show()
-                        Me.Close()
                 End Select
+
+                If fallos = 6 Then
+                    gestor.User.TiempoRespuesta += (60 - tiempo)
+                    gestor.GuardarUsuarioYPuntuacion()
+                    FrmgameOver.Show()
+                    Me.Close()
+                End If
+
             End If
         End If
     End Sub
+
+    Private Sub tmrTiempo_Tick(sender As Object, e As EventArgs) Handles tmrTiempo.Tick
+        tiempo -= 1
+
+        lblTimer.Text = tiempo
+        If tiempo = 0 Then
+            tmrTiempo.Enabled = False
+            gestor.GuardarUsuarioYPuntuacion()
+            Me.Close()
+            FrmgameOver.Show()
+
+        End If
+    End Sub
+
+
 End Class

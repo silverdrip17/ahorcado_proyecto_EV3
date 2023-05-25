@@ -1,1 +1,16 @@
-elocuente rojo silbar tecnologia asincrono
+elocuente*verbo
+rojo*color
+silbar*accion
+tecnologia*coso
+asincrono*verbo
+mesa*mueble
+pajaro*animal
+hola*saludo
+pedro*nombre
+juan*nombre
+perro*animal
+gato*animal
+zorro*animal
+toro*animal
+vida*verbo
+arbol*naturaleza

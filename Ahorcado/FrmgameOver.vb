@@ -1,15 +1,21 @@
 ﻿
 Public Class FrmgameOver
     Private Sub Btnreset_Click(sender As Object, e As EventArgs) Handles Btnreset.Click
-        FrmJuego.Show()
+        FrmDificultad.Show()
         Me.Close()
     End Sub
 
     Private Sub Btnexit_Click(sender As Object, e As EventArgs) Handles Btnexit.Click
+        End
+    End Sub
+
+    Private Sub btnInicioG_Click(sender As Object, e As EventArgs) Handles btnInicioG.Click
+        FrmBienvenida.Show()
         Me.Close()
     End Sub
 
+
     Private Sub FrmgameOver_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Size = New Size(632, 500)
+
     End Sub
 End Class

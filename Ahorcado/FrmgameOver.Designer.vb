@@ -25,40 +25,80 @@ Partial Class FrmgameOver
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmgameOver))
         Me.Btnexit = New System.Windows.Forms.Button()
         Me.Btnreset = New System.Windows.Forms.Button()
+        Me.btnInicioG = New System.Windows.Forms.Button()
+        Me.lblRanking = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Btnexit
         '
-        Me.Btnexit.Location = New System.Drawing.Point(469, 335)
+        Me.Btnexit.BackColor = System.Drawing.Color.Transparent
+        Me.Btnexit.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btnexit.Location = New System.Drawing.Point(436, 302)
+        Me.Btnexit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btnexit.Name = "Btnexit"
-        Me.Btnexit.Size = New System.Drawing.Size(160, 75)
+        Me.Btnexit.Size = New System.Drawing.Size(124, 53)
         Me.Btnexit.TabIndex = 0
-        Me.Btnexit.Text = "EXIT"
-        Me.Btnexit.UseVisualStyleBackColor = True
+        Me.Btnexit.Text = "Salir"
+        Me.Btnexit.UseVisualStyleBackColor = False
         '
         'Btnreset
         '
-        Me.Btnreset.Location = New System.Drawing.Point(177, 335)
+        Me.Btnreset.BackColor = System.Drawing.Color.Transparent
+        Me.Btnreset.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btnreset.Location = New System.Drawing.Point(21, 302)
+        Me.Btnreset.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btnreset.Name = "Btnreset"
-        Me.Btnreset.Size = New System.Drawing.Size(160, 75)
+        Me.Btnreset.Size = New System.Drawing.Size(136, 53)
         Me.Btnreset.TabIndex = 1
-        Me.Btnreset.Text = "Jugar de nuevo"
-        Me.Btnreset.UseVisualStyleBackColor = True
+        Me.Btnreset.Text = "Reintentar"
+        Me.Btnreset.UseVisualStyleBackColor = False
+        '
+        'btnInicioG
+        '
+        Me.btnInicioG.BackColor = System.Drawing.Color.Transparent
+        Me.btnInicioG.Font = New System.Drawing.Font("Dubai", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInicioG.Location = New System.Drawing.Point(21, 23)
+        Me.btnInicioG.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnInicioG.Name = "btnInicioG"
+        Me.btnInicioG.Size = New System.Drawing.Size(91, 38)
+        Me.btnInicioG.TabIndex = 2
+        Me.btnInicioG.Text = "Inicio"
+        Me.btnInicioG.UseVisualStyleBackColor = False
+        '
+        'lblRanking
+        '
+        Me.lblRanking.AutoSize = True
+        Me.lblRanking.Location = New System.Drawing.Point(237, 62)
+        Me.lblRanking.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRanking.Name = "lblRanking"
+        Me.lblRanking.Size = New System.Drawing.Size(48, 16)
+        Me.lblRanking.TabIndex = 3
+        Me.lblRanking.Text = "Label1"
         '
         'FrmgameOver
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(702, 453)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(572, 358)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.lblRanking)
+        Me.Controls.Add(Me.btnInicioG)
         Me.Controls.Add(Me.Btnreset)
         Me.Controls.Add(Me.Btnexit)
+        Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmgameOver"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GameOver"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Btnexit As Button
     Friend WithEvents Btnreset As Button
+    Friend WithEvents btnInicioG As Button
+    Friend WithEvents lblRanking As Label
 End Class

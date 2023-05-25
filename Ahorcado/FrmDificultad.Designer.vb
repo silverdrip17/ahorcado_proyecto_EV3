@@ -82,11 +82,13 @@ Partial Class FrmDificultad
         Me.BackgroundImage = Global.Ahorcado.My.Resources.Resources.ahorcado2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnNormal)
         Me.Controls.Add(Me.btnFacil)
         Me.Name = "FrmDificultad"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dificultad"
         Me.ResumeLayout(False)
         Me.PerformLayout()

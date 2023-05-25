@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -14,6 +15,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +51,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.13.3.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -97,6 +103,18 @@
     <Compile Include="FrmgameOver.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmLoginAdmin.Designer.vb">
+      <DependentUpon>FrmLoginAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAadiralabras.Designer.vb">
+      <DependentUpon>FrmAadiralabras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAadiralabras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -120,8 +138,17 @@
     <Compile Include="FrmVictoria.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmRanking.Designer.vb">
+      <DependentUpon>FrmRanking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRanking.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAadiralabras.resx">
+      <DependentUpon>FrmAadiralabras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJuego.resx">
       <DependentUpon>FrmJuego.vb</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +161,9 @@
     <EmbeddedResource Include="FrmgameOver.resx">
       <DependentUpon>FrmgameOver.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginAdmin.resx">
+      <DependentUpon>FrmLoginAdmin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -142,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVictoria.resx">
       <DependentUpon>FrmVictoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRanking.resx">
+      <DependentUpon>FrmRanking.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +190,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\ahorcado2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenesAhorcado\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizarra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\felizA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tristeA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Soluciones\soluciones.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Soluciones\TextFile1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Soluciones\Usarios.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BibliotecaDeClases\BibliotecaDeClases.vbproj">
@@ -165,23 +237,11 @@
       <Name>BibliotecaDeClases</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenesAhorcado\el-ahorcado6.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.3\build\NUnit.props'))" />
+  </Target>
 </Project>
