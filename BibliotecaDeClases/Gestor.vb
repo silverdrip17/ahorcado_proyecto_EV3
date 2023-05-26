@@ -1,6 +1,12 @@
 ﻿Public Class Gestor
     Public Property User As User
-    Public MostrarUsuarios As String() = System.IO.File.ReadAllLines("./Soluciones/Usarios.txt")
+    Public Function MostrarUsuarios() As List(Of String)
+        Dim usuarios As New List(Of String)
+        usuarios.AddRange(System.IO.File.ReadAllLines("./Soluciones/Usarios.txt"))
+        usuarios.Sort(Function(x As String, y As String) Integer.Parse(y.Split("*")(1)).CompareTo(Integer.Parse(x.Split("*")(1))))
+        Return usuarios
+    End Function
+
     Public Sub CrearUsuario()
         user = New User
     End Sub

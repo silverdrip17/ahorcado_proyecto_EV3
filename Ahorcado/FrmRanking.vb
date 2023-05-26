@@ -5,6 +5,13 @@
     End Sub
 
     Private Sub FrmRanking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LblUsuarios.Items.AddRange(gestor.MostrarUsuarios)
+
+        Dim usuarios As String() = gestor.MostrarUsuarios.ToArray
+        Dim split As String()
+        For Each us In usuarios
+            split = us.Split("*")
+            LstUsuarios.Items.Add($"{split(0)} {split(1)}")
+        Next
+
     End Sub
 End Class

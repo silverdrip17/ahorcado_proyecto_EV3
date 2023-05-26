@@ -22,41 +22,43 @@ Partial Class FrmRanking
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LblUsuarios = New System.Windows.Forms.ListBox()
+        Me.LstUsuarios = New System.Windows.Forms.ListBox()
         Me.Btninicio = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'LblUsuarios
+        'LstUsuarios
         '
-        Me.LblUsuarios.FormattingEnabled = True
-        Me.LblUsuarios.ItemHeight = 16
-        Me.LblUsuarios.Location = New System.Drawing.Point(19, 36)
-        Me.LblUsuarios.Name = "LblUsuarios"
-        Me.LblUsuarios.Size = New System.Drawing.Size(727, 308)
-        Me.LblUsuarios.TabIndex = 0
+        Me.LstUsuarios.FormattingEnabled = True
+        Me.LstUsuarios.Location = New System.Drawing.Point(14, 29)
+        Me.LstUsuarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LstUsuarios.Name = "LstUsuarios"
+        Me.LstUsuarios.Size = New System.Drawing.Size(546, 251)
+        Me.LstUsuarios.TabIndex = 0
         '
         'Btninicio
         '
-        Me.Btninicio.Location = New System.Drawing.Point(206, 376)
+        Me.Btninicio.Location = New System.Drawing.Point(154, 306)
+        Me.Btninicio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Btninicio.Name = "Btninicio"
-        Me.Btninicio.Size = New System.Drawing.Size(272, 50)
+        Me.Btninicio.Size = New System.Drawing.Size(204, 41)
         Me.Btninicio.TabIndex = 1
         Me.Btninicio.Text = "Inicio"
         Me.Btninicio.UseVisualStyleBackColor = True
         '
         'FrmRanking
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.Btninicio)
-        Me.Controls.Add(Me.LblUsuarios)
+        Me.Controls.Add(Me.LstUsuarios)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmRanking"
         Me.Text = "Ranking"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents LblUsuarios As ListBox
+    Friend WithEvents LstUsuarios As ListBox
     Friend WithEvents Btninicio As Button
 End Class

@@ -12,8 +12,9 @@ Public Class FrmBienvenida
             Dim txtCaja As New TextBox
             txtCaja.Name = "txtNombreUsuario"
             txtCaja.Size = New Size(100, 10)
-            txtCaja.Location = New Point(30, 50)
+            txtCaja.Location = New Point(160, 50)
             Me.Controls.Add(txtCaja)
+            txtCaja.Focus()
         Else
 
             If miControl(0).Text <> "" Then
@@ -43,5 +44,9 @@ Public Class FrmBienvenida
     Private Sub BtnLoginAdmin_Click(sender As Object, e As EventArgs) Handles BtnLoginAdmin.Click
         FrmLoginAdmin.Show()
         Hide()
+    End Sub
+
+    Private Sub btnRanking_Click(sender As Object, e As EventArgs) Handles btnRanking.Click
+        FrmRanking.Show()
     End Sub
 End Class

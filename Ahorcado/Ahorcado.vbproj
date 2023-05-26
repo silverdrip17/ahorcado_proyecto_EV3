@@ -224,7 +224,7 @@
     <Content Include="Soluciones\soluciones.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Soluciones\TextFile1.txt">
+    <Content Include="Soluciones\solucionesFaciles.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Soluciones\Usarios.txt">

@@ -4,7 +4,7 @@ Public Class FrmAadiralabras
     Dim gestorPalabras As ListaPalabras
 
     Private Sub FrmAadiralabras_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Cbocategorias.Items.AddRange({"verbo", "color", "accion", "mueble", "animal", "saludo", "nombre", "naturaleza"})
+        Cbocategorias.Items.AddRange({"verbo", "color", "accion", "mueble", "animal", "saludo", "naturaleza"})
         Cbodificultad.Items.AddRange({"Fácil", "Normal"})
         TxtPalabraAñadir.Enabled = False
         Cbocategorias.Enabled = False

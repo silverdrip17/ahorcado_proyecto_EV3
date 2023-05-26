@@ -15,7 +15,7 @@
         If dificultad = "Normal" Then
             fichero = "./Soluciones/soluciones.txt"
         Else
-            fichero = "./Soluciones/TextFile1.txt"
+            fichero = "./Soluciones/solucionesFaciles.txt"
         End If
 
         If System.IO.File.Exists(fichero) Then
@@ -36,7 +36,7 @@
         Else ' todo Si no existe fichero arrayPalabras vacío???
             PalabrasDeFichero = {"abecedario", "insti", "cinco", "año"}
             arrayPalabras.AddRange(PalabrasDeFichero)
-            System.IO.File.WriteAllLines("./Soluciones/soluciones.txt", PalabrasDeFichero)
+            System.IO.File.WriteAllLines(fichero, PalabrasDeFichero)
 
         End If
 
@@ -91,7 +91,7 @@
         If dificultad = "Normal" Then
             fichero = "./Soluciones/soluciones.txt"
         Else
-            fichero = "./Soluciones/TextFile1.txt"
+            fichero = "./Soluciones/solucionesFaciles.txt"
         End If
 
         If arrayPalabras.Contains(Palabra) Then
